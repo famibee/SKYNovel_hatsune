@@ -3,7 +3,7 @@
 	; *** テキストレイヤ横書きWide下設定 ***
 	[txt_lay_h_bottom_wide]
 	; *** BG ***
-	[lay layer=mes page=back layout='fontFamily="ipam"']
+;	[lay layer=mes page=back layout='fontFamily=ipam']
 	[grp bg=white time=1500 sys_menu=false b_alpha=0]
 [r]
 　君の部屋に行こう[waitclick][r]
@@ -21,24 +21,24 @@
 
 	; *** テキストレイヤ横書きWide下設定 ***
 	[txt_lay_h_bottom_wide fcol=white no_sysmenu_draw=true]
-	[grp bg=初音館_玄関 time=2000 sys_menu=false b_alpha=0]
+	[grp bg=hatsunekan_entrance time=2000 sys_menu=false b_alpha=0]
 
 	; *** BGM ***
 	[bgm fn=free04]
 
 [r]
-;	[span layout='fontFamily=癸羊明朝cff']
+;;	[span layout='fontFamily=癸羊明朝cff']
 　大正十一年（一九二二年）四月｜朔日《ついたち》[r]
 　　──神田、｜初音館《はつ ね かん》
-;	[span layout='fontFamily=IPA明朝cff']
+;;	[span layout='fontFamily=IPA明朝cff']
 [plc visible=false]
 
 
 	; *** テキストレイヤ横書きWide下設定 ***
 	[txt_lay_h_bottom_wide]
-	[grp bg=初音館_廊下 rule=どう言ったらいいか分からないけどちょっと違う横ブラインド(左から右へ)]
+	[grp bg=hatsunekan_corridor rule=r_blind_l2r]
 
-	[fg2 fn=蓑浦_和装 face=蓑浦_口_微笑,蓑浦_眼_普通,蓑浦_眉_普通]
+	[fg2 fn=mino_body_wa face=mino_kuchi_hohoemi,mino_me_nor,mino_mayu_nor]
 「はじめまして、｜蓑浦《みのうら》金之助《きん の すけ》と申します。｜實業學校《じつぎょうがっこう》の四年生です」[plc]
 
 　この春から越してきた、神田の初音館という下宿屋。[lr]
@@ -47,15 +47,15 @@
 　壁土が剥がれ歩く度に廊下が鳴る、ぼろぼろの廊下。[lr]
 　廊下で向き合う表情｜變化《へん か》の乏《とぼ》しいその青年は、ぽかんと穴が開くほど僕の顔《かお》を見ていた。[plc]
 
-	[fg2 fn=蓑浦_和装 face=蓑浦_口_普通,蓑浦_眼_普通,蓑浦_眉_普通]
+	[fg2 fn=mino_body_wa face=mino_kuchi_nor,mino_me_nor,mino_mayu_nor]
 「あの……」[plc]
 
-	[fg2 fn=諸戸_通常]
+	[fg2 fn=moro_nor]
 「ああ、僕は諸戸。諸戸《もろ と》道雄《みち お》です。二十三歳の大學生です」[plc]
 
 　｜魂消《たま げ》た身体にたったいま魂が戻ったかのように、改まって挨拶を返した。[plc]
 
-	[fg2 fn=蓑浦_和装 face=蓑浦_口_開き,蓑浦_眼_普通,蓑浦_眉_普通]
+	[fg2 fn=mino_body_wa face=mino_kuchi_hiraki,mino_me_nor,mino_mayu_nor]
 「そうですか。僕は十七歳ですから、｜年齡《ねんれい》は六つも違っている先輩ですね」[plc]
 
 「ずいぶん若く見えるね。十四歳ぐらいには見える」[plc]
@@ -66,7 +66,7 @@
 〝私の筋肉が世の大人たちのように發達《はったつ》せず、婦女子のように艷《あで》やかであったから、よく若く見られてしまうのだ〟[plc]
 
 
-	[fg2 fn=蓑浦_和装 face=蓑浦_口_開き,蓑浦_眼_普通,蓑浦_眉_怒り]
+	[fg2 fn=mino_body_wa face=mino_kuchi_hiraki,mino_me_nor,mino_mayu_ikari]
 「十四って……。それではまるで高等小學校に通う學童《がくどう》ではありませんか」[plc]
 
 　｜云《い》われ慣れているとは云え、さすがの私も臍《へそ》を曲げてしまう。[plc]
@@ -78,7 +78,7 @@
 
 「｜頬《ほお》に触れても良いかな？」[plc]
 
-	[fg2 fn=蓑浦_和装 face=蓑浦_口_開き,蓑浦_眼_普通,蓑浦_眉_普通]
+	[fg2 fn=mino_body_wa face=mino_kuchi_hiraki,mino_me_nor,mino_mayu_nor]
 「えっ」[plc]
 
 　頬を張られるような氣がして身が縮こまる。[plc]
@@ -88,13 +88,13 @@
 　青年は、眞劍な眼差しで私にそう云った。[lr]
 　多少面食らったが、これから同居人として過ごすのだから、多少奇妙な人でも附き合わねばならない。[plc]
 
-	[fg2 fn=蓑浦_和装 face=蓑浦_口_微笑,蓑浦_眼_普通,蓑浦_眉_普通]
+	[fg2 fn=mino_body_wa face=mino_kuchi_hohoemi,mino_me_nor,mino_mayu_nor]
 「ええ、──構いませんよ」[plc]
 
 　恐る恐る、しかし感触を確かめるようなその熱い手のひらの感触。[lr]
 　ひた　ひた。[plc]
 
-	[fg2 fn=蓑浦_和装 face=蓑浦_口_普通,蓑浦_眼_半開き,蓑浦_眉_普通]
+	[fg2 fn=mino_body_wa face=mino_kuchi_nor,mino_me_hanbiraki,mino_mayu_nor]
 　人を避け、近寄らせないような空氣の殼《から》。なのに自ら手を差し伸べ私に触れようとしている矛盾を手のひらの愛撫《あい ぶ》が語る。[plc]
 
 
@@ -109,14 +109,14 @@
 　諸戸さんが彈《はじ》けるように手を離す。[lr]
 　私は彼が白い頬のあたりに微《かす》かな羞恥の表情を見せたのが氣になった。[plc]
 
-	[fg2 fn=小鳥遊 pos=&pos.l3c]
+	[fg2 fn=takanashi pos=&pos.l3c]
 「おや、これは珍しい。人嫌いの諸戸が人見知りしないなんてな」[plc]
 
 　玄關でシャッポを脱いだ｜賑《にぎ》やかな闖入《ちんにゅう》者は、上はブレザーから下は洋靴というハイカラな洋服のコーディネイト。着こなすと云うより、服を引き立てるハンガーのように〝服に着られて〟いた。[plc]
 
 「己《おれ》は小鳥遊《たかなし》。諸戸と同じ學部で、ここの住人さ」[plc]
 
-	[fg2 fn=蓑浦_和装 face=蓑浦_口_微笑,蓑浦_眼_普通,蓑浦_眉_普通]
+	[fg2 fn=mino_body_wa face=mino_kuchi_hohoemi,mino_me_nor,mino_mayu_nor]
 　私も挨拶を返すと、聞きもしないのに小鳥遊さんは饒舌《じょう ぜつ》に語り出す。[plc]
 
 「諸戸が初對面の人間を氣に入るなんて、今日は槍《やり》が降るな。彼は大學でも秀才で通っていて、医學｜博士《はくし》や製薬企業のお偉いさんとしか對等の口を利かないと思っていたが」[plc]
@@ -129,7 +129,7 @@
 
 「おっと藪をつついて蛇が出たようだね。それでは己は失禮《しつれい》するよ」[plc]
 
-	[fg2 del=小鳥遊]
+	[fg2 del=takanashi]
 　諸戸さんの異樣な眼光に背中を灼《や》かれつつ、小鳥遊さんは廊下の階段を昇っていった。[plc]
 
 　諸戸さんは私に一瞥《いちべつ》してから、自分の部屋に戻ろうとしかかり、足を止めて振り向く。[plc]
@@ -138,16 +138,16 @@
 
 　いい人なんだけど、この眞劍な眼差しは中中《なかなか》取っつきにくい。[plc]
 
-	[fg2 fn=蓑浦_和装 face=蓑浦_口_微笑,蓑浦_眼_半開き,蓑浦_眉_普通]
+	[fg2 fn=mino_body_wa face=mino_kuchi_hohoemi,mino_me_hanbiraki,mino_mayu_nor]
 「ええ、こちらこそ」[plc]
 
 　笑顔、笑顔。これからお世話になるのだから。[plc]
 
 　またしても私の顔を見て硬直したあと、[l]
-	[fg2 del=諸戸]
+	[fg2 del=moro]
 諸戸さんはいやにぎこちない挙動で自分の部屋に戻っていったのだ。[plc]
 
-	[fg2 fn=蓑浦_和装 face=蓑浦_口_普通,蓑浦_眼_普通,蓑浦_眉_憂い]
+	[fg2 fn=mino_body_wa face=mino_kuchi_nor,mino_me_nor,mino_mayu_urei]
 　どうにも私は笑顔が苦手だ。懸命に親愛の情を出せば出すほど、相手は緊張してしまう。[lr]
 　ぎこちない笑顔《え がお》に相手が戸惑うのだろう。[lr]
 　はぁ……。がんばろう。[plc]
@@ -156,7 +156,7 @@
 	; *** BGM ***
 	[bgm fn=free25 time=2000]
 
-	[grp bg=大学講堂]
+	[grp bg=univ_auditorium]
 
 [r][r]
 〝諸戸と蓑浦は變《へん》だ〟[plc]
@@ -171,12 +171,12 @@
 　同じ下宿屋に住むというだけの共通点で、學年も學校も違う私を連れ出してくれる諸戸さんは本當に氣さくな人なのだ。[plc]
 
 
-	[grp bg=初音館_蓑浦部屋]
+	[grp bg=hatsunekan_minoura_room]
 
-	[fg2 fn=諸戸_通常]
+	[fg2 fn=moro_nor]
 「蓑浦君。｜錢湯《せんとう》に行こう」[plc]
 
-	[fg2 fn=蓑浦_和装 face=蓑浦_口_微笑,蓑浦_眼_普通,蓑浦_眉_普通]
+	[fg2 fn=mino_body_wa face=mino_kuchi_hohoemi,mino_me_nor,mino_mayu_nor]
 「いいですね。今日は汗をかいたので行水《ぎょうずい》しようと思っていました」[plc]
 
 　風呂屋に行くのも面倒だし、｜大家《おお や》さんから盥《たらい》を借りて水を張り、肌を手拭いで拭くだけでよいかと考えていた。[plc]
@@ -188,15 +188,15 @@
 「そう。科學者を目指すからこその指摘だ」[plc]
 
 
-	[grp bg="black" time=1500 nofi_txt=true]
-	[grp bg="ガス灯" time=2000 nofo_txt=true]
+	[grp bg=black time=1500 nofi_txt=true]
+	[grp bg=gas_lamp time=2000 nofo_txt=true]
 
 　町並みはここ數年で｜瓦斯《ガ ス》灯が消え去り、タングステン電球の街灯が夜道を照らしている。[lr]
 　なのに道路は舖裝が追いつかず、土が露出した地面を下駄で歩けばカラコロジャラリと音がする。[plc]
 
 	; *** テキストレイヤ横書きWide下設定 ***
 	[txt_lay_h_bottom_wide b_alpha=0.8]
-	[grp bg="夜道"]
+	[grp bg=night_road]
 　ちぐはぐな街を歩く影が二つ。[lr]
 　大きな影と、少し華奢《きゃしゃ》で撫《な》で肩《がた》の影がくっついている。[plc]
 
@@ -221,11 +221,11 @@
 	; *** テキストレイヤ横書きWide下設定 ***
 	[txt_lay_h_bottom_wide]
 	; *** BG ***
-	[grp bg="black" rule="上下分割ノイズ散布" nofi_txt=true]
+	[grp bg=black rule=r_ulspl_noise nofi_txt=true]
 	[wait time=2000]
-	[grp bg="脱衣所" rule="右回りにこするの" nofo_txt=true nofi_txt=true]
+	[grp bg=dressing_room rule=r_rub_clockwise nofo_txt=true nofi_txt=true]
 	[wait time=2000]
-	[grp bg="銭湯" se="mizu07" nofo_txt=true rule="やや細かい縦ブラインド(中央から左右へ)"]
+	[grp bg=public_bath se=mizu07 nofo_txt=true rule=r_blind_c2side]
 
 「諸戸さんの背中は広いですね」[plc]
 
@@ -233,7 +233,7 @@
 
 　彼は返事をしないが、素肌は微かに震えているような手応えだ。[plc]
 
-	[fg fn="蓑浦_基本" face="蓑浦_口_普通,蓑浦_眼_普通,蓑浦_眉_普通"]
+	[fg fn=mino_base face=mino_kuchi_nor,mino_me_nor,mino_mayu_nor]
 「……諸戸さん、寒いのですか？」[plc]
 
 「いや、大丈夫だ。｜温《ぬく》くて氣持ちいいのさ。続けてくれ給《たま》え」[plc]
@@ -243,20 +243,20 @@
 「そろそろ交代しよう」[plc]
 
 　私が背中を向けると、諸戸さんは冷え切った私の身体に浴槽から汲んだ湯を背に浴びせる。
-	[se fn="water01_a"]
+	[se fn=water01_a]
 [plc]
 
-	[fg fn="蓑浦_基本" face="蓑浦_口_微笑,蓑浦_汗,蓑浦_眼_閉じ,蓑浦_眉_怒り"]
+	[fg fn=mino_base face=mino_kuchi_hohoemi,mino_ase,mino_me_toji,mino_mayu_ikari]
 「うう、熱いけど氣持ちいいです」[plc]
 
 「熱いかい。すまない」[plc]
 
-	[se fn="water00"]
+	[se fn=water00]
 　背に掛かる湯が少しぬるまった。散髮屋から寄贈されたらしき鏡をちらりと覗くと、諸戸さんは湯桶から直接背に掛けるのをやめ、自分の手のひらに掛け冷ましてから背に浴びせていた。屋根に降った雨粒《あまつぶ》が雨樋《あまどい》を伝って路地の泥濘《ぬかるみ》に吸い込まれていくかのように。[plc]
 
 　ぶっきらぼうに見えて、細やかな氣配りが出來るところは諸戸さんの美点だろう。多少神経質なぐらいでなくては科學者や秀才にはなれないのかも知れない。[plc]
 
-	[fg fn="蓑浦_基本" face="蓑浦_口_普通,蓑浦_ほほ染め,蓑浦_汗,蓑浦_眼_半開き,蓑浦_眉_普通"]
+	[fg fn=mino_base face=mino_kuchi_nor,mino_hoho,mino_ase,mino_me_hanbiraki,mino_mayu_nor]
 　彼は湯桶にもう一掬《ひとすく》いすると、今度は自らの胸板に湯を浴びせた。[lr]
 　胸板、[l]腕、[l]腹筋。[lr]
 　彼の肉体の表面を透明な湯が滑り落ちていく。[plc]
@@ -275,7 +275,7 @@
 
 「さあ、前を向いて」[plc]
 
-	[fg fn="蓑浦_基本" face="蓑浦_口_開き,蓑浦_ほほ染め,蓑浦_汗,蓑浦_眼_普通,蓑浦_眉_怒り"]
+	[fg fn=mino_base face=mino_kuchi_hiraki,mino_hoho,mino_ase,mino_me_nor,mino_mayu_ikari]
 「前は自分でやります」[plc]
 
 「だめだ。君は自分の身体を乱暴に扱う節《ふし》がある。僕に任せたまえ」[plc]
@@ -283,7 +283,7 @@
 　彼にとって私は年の離れた弟のようなものなのだろう。そう考えるとごく自然なスキンシップであり、端から見ると多少變に見えるだけの事だ。[lr]
 　私の學校でも遊戯に近い感じでは、同じような事柄が行なわれているのだし。[plc]
 
-	[fg fn="蓑浦_基本" face="蓑浦_口_普通,蓑浦_ほほ染め,蓑浦_汗,蓑浦_眼_半開き,蓑浦_眉_怒り"]
+	[fg fn=mino_base face=mino_kuchi_nor,mino_hoho,mino_ase,mino_me_hanbiraki,mino_mayu_ikari]
 　手拭いをあぶくだらけにして、首筋や胸板を拭《ぬぐ》っていく。[lr]
 　腕を他人に持ち上げられて拭われると、ますます自分が手の掛かる稚児《ややこ》が乳母《うば》に世話をされている頃に心と肉体が引き戻されるようである。[plc]
 
@@ -292,24 +292,24 @@
 
 「ここは｜Ｄｅｌｉｃａｔｅ《デリケート》な部分だからね……」[plc]
 
-	[fg fn="蓑浦_基本" face="蓑浦_口_開き,蓑浦_ほほ染め,蓑浦_汗,蓑浦_眼_閉じ,蓑浦_眉_憂い"]
+	[fg fn=mino_base face=mino_kuchi_hiraki,mino_hoho,mino_ase,mino_me_toji,mino_mayu_urei]
 　そういいわけするようにして彼は細首の花瓶を磨《みが》くかのように手を差し伸ばす。[plc]
 
 	; *** BG ***
-	[grp bg="風呂桶" se="mizu07" nofi_txt=true]
+	[grp bg=bath_tub se=mizu07 nofi_txt=true]
 	[wait time=2000]
-	[grp bg="black" rule="上下分割ノイズ散布" nofo_txt=true nofi_txt=true]
+	[grp bg=black rule=r_ulspl_noise nofo_txt=true nofi_txt=true]
 	; *** BGM ***
 	[fadeoutbgm time=2000]
 	[wait time=2000]
-	[grp bg="レストラン" rule="右回りにこするの" nofo_txt=true]
+	[grp bg=restaurant rule=r_rub_clockwise nofo_txt=true]
 
 〝肉体的な事ばかりではなく、彼は私に親切の限りを尽くしてくれたのだった。[lr]
 　彼は私にいろいろ贈り物をした。芝居や映画や運動競技などにも連れて行ってくれた。[lr]
 　語學を見てくれた。試験の前などには、我が事のように骨を折って心配してくれたのだった〟[plc]
 
 
-	[se fn="DishC@16"]
+	[se fn=DishC_16]
 　ある日も、下宿の飯がまずいというので近くのレストランで食事をしていた。[plc]
 
 「家の都合もありましたが、むしろ大部分は僕の幼い好奇心から、同じ東京に実家を持ちながら、この初音館に泊まっているだけなんです」[plc]
@@ -329,13 +329,13 @@
 　諸戸さんは自分の事を、あまり話そうとしないのだった。[plc]
 
 
-	[grp bg="初音館_門"]
+	[grp bg=hatsunekan_gate]
 
 　ある日の事だった。[lr]
 　何の間違いか私のような者に好意を寄せてくる女性が現われたのだ。[lr]
 　それは私と同じ實業學校に通う女生徒であった。[plc]
 
-	[fg fn="女生徒" pos=&pos.l3c]
+	[fg fn=fem_student pos=&pos.l3c]
 　女にしては奇妙な趣味で、江戸時代の妖怪絵を蒐集《しゅうしゅう》しているという。[lr]
 　幾つか見せられた書籍には奇っ怪な形状をした化け物どもが百鬼夜行を群れなし、子供の事見た御伽《おとぎ》草子《ぞう し》のように心躍らせるものがあった。[plc]
 
@@ -345,13 +345,13 @@
 　私の下宿が見たいというので連れ立ち、初音館の入り口で諸戸さんと鉢合わせになったのだ。[plc]
 
 	; *** BGM ***
-	[bgm fn="free57" time=2000]
+	[bgm fn=free57 time=2000]
 
-	[se fn="step11"]
-	[fg fn="諸戸_通常" layer=1 pos=&pos.l2l]
+	[se fn=step11]
+	[fg fn=moro_nor layer=1 pos=&pos.l2l]
 「金之助、｜此方《こちら》は｜何方《どなた》だい」[plc]
 
-	[fg fn="女生徒" pos=&pos.l2r]
+	[fg fn=fem_student pos=&pos.l2r]
 　強い語氣で名を呼ばれて叱られているような氣持ちになる。[lr]
 　名を初めて呼ばれた氣がする事に動転しているが、氣を取り直す。[plc]
 
@@ -361,7 +361,7 @@
 
 　なにか苛立ちげに強引に私の話を遮《さえぎ》る諸戸さんは、いつもの紳士性と冷靜さを欠いているようだった。[plc]
 
-	[fg fn="諸戸_異様" layer=1 pos=&pos.l2l]
+	[fg fn=moro_strange layer=1 pos=&pos.l2l]
 「女と云うものは怖いけどお化けが好き等と平気で云う。まったくもって非合理で心理が理解できない生きものだ」[plc]
 
 　諸戸さんが珍しく──激しい感情を露わにしている。[lr]
@@ -372,14 +372,14 @@
 　声を聞きたくないと言葉で塗りつぶすかのように、普段は言葉少なな彼が放云する。[lr]
 　冷靜に振る舞おうとして論理の羽根車が暴走しているかのように。[plc]
 
-	[fg fn="諸戸_怒りCut" layer=2 left=0 top=200]
+	[fg fn=moro_ikari_cut layer=2 left=0 top=200]
 「｜巫山戯《ふざけ》るなッ！」[plc]
 
-	[se fn="step03"]
+	[se fn=step03]
 	[fg]
 　彼が強迫的に叫ぶと、先ほどまでにこやかに話していた女生徒は泣き顔でそそくさと退散してしまったのだった。[plc]
 
-	[fg fn="諸戸_通常" layer=1 pos=&pos.l2l time=0]
+	[fg fn=moro_nor layer=1 pos=&pos.l2l time=0]
 	[fg layer=2]
 「君の友人を泣かせてしまったね。すまない。虫の居所が悪かったんだ」[plc]
 
@@ -393,9 +393,9 @@
 
 
 	; *** BGM ***
-	[bgm fn="free56" time=2000]
+	[bgm fn=free56 time=2000]
 
-	[grp bg="障子窓"]
+	[grp bg=shoji_window]
 
 　諸戸さんも埋め合わせをするかのように私に侘び続け、三人で湘南の海岸に避暑に行こうと申し出をした。女生徒にその申し出をすると丁重に断られ、それきりの附き合いとなった。[lr]
 　それだけなら些細な悶着《もんちゃく》の一件として忘れてしまった事だろう。[plc]
@@ -412,17 +412,17 @@
 	; *** テキストレイヤ縦書き左設定 ***
 	[txt_lay_v_left b_alpha=0 fcol=0xFFFFFF]
 
-	[se fn="BellC@11"]
-	[img fn="石燕引用_拾遺中霧" layer=2]
-	[trans layer="mes,2" time=1000 rule="右渦巻き"]
+	[se fn=BellC_11]
+	[img fn=sakien_syuui_chu_kiri layer=2]
+	[trans layer=mes,2 time=1000 rule=r_uzumaki]
 	[wt]
 
 ;#USE-FONT	癸羊明朝cff
-	[span layout='fontFamily="癸羊明朝cff"']
+;	[span layout='fontFamily=癸羊明朝cff']
 鳥山石燕《とり やま せき えん》　｜『今昔百鬼拾遺《　こ んじ ゃく ひゃ っき しゅ うい》』中之巻　霧[lr]
 
-	[se fn="PageD@16"]
-	[fg fn="石燕引用_雨女" layer=2 rule="左から右へ"]
+	[se fn=PageD_16]
+	[fg fn=sakien_ameonna layer=2 rule=r_l2r]
 　雨女《あめおんな》[lr]
 [r]
 　もろこし巫山《ふざん》の神女《じんぢょ》は、[lr]
@@ -438,7 +438,7 @@
 
 	; *** テキストレイヤ縦書き左設定 ***
 	[txt_lay_v_left]
-	[grp bg="畳"]
+	[grp bg=tatami]
 
 　自分の住む下宿で殺人が起こり、犯人と同居しているかも知れないという不安は住人全てを不安にさせた。[lr]
 　犯人だから逃亡するのではないか。引っ越すにも躊躇《ちゅうちょ》があり、逃げ場がない樣子だった。[plc]
@@ -471,17 +471,17 @@
 　彼も実習や勉學が忙しいのか、數日顔を合わせない事もあった。[plc]
 
 
-	[se fn="knock01"]
+	[se fn=knock01]
 　再び顔を合わせたのは、七日ぶりに彼が私の部屋に訪れたときだった。[plc]
 
 
-	[se fn="DoorOpenA@11"]
-	[grp bg="初音館_蓑浦部屋" l0="諸戸_異様" pos0=&pos.l2l]
+	[se fn=DoorOpenA_11]
+	[grp bg=hatsunekan_minoura_room l0=moro_strange pos0=&pos.l2l]
 「蓑浦君。久しぶりだね」[plc]
 
 　私をじっと見るあの目は、妄執《もうしゅう》に囚われているかのように爛爛《らんらん》と光り輝いていた。[plc]
 
-	[fg fn="諸戸_通常" pos=&pos.l2l]
+	[fg fn=moro_nor pos=&pos.l2l]
 「君に疑われたままでは寝覚めが悪いからね。先月の女生徒殺害事件を調べてみたんだ」[plc]
 
 　ただ漫然と暮らしていた私と違い、彼はどれほど犯人探索に粉骨砕身して事に當たっていたのだろうか。[lr]
@@ -489,7 +489,7 @@
 
 　その強烈な個性は初見こそ取り附く島もない風体だが、慣れ親しんだ私には一種懐かしさを感じるものだった。[plc]
 
-	[fg fn="蓑浦_和装" face="蓑浦_口_開き,蓑浦_眼_普通,蓑浦_眉_怒り" layer=1 pos=&pos.l2r]
+	[fg fn=mino_body_wa face=mino_kuchi_hiraki,mino_me_nor,mino_mayu_ikari layer=1 pos=&pos.l2r]
 「なぜ、あなたが」[plc]
 
 　憲兵や地方警察でもないのに、と続けようとする言葉を呑み込む。[lr]
@@ -504,48 +504,48 @@
 	; *** テキストレイヤ縦書き左設定 ***
 	[txt_lay_v_left b_alpha=0.8]
 	; *** BG ***
-	[grp bg="black" rule="上下分割ノイズ散布" nofi_txt=true]
+	[grp bg=black rule=r_ulspl_noise nofi_txt=true]
 	[wait time=2000]
 	; *** BGM ***
-	[bgm fn="free34" time=2000]
-	[grp bg="砂利道" l0="初音館_外観" left0=500 top0=30 rule="右回りにこするの" nofo_txt=true]
+	[bgm fn=free34 time=2000]
+	[grp bg=gravel_road l0=hatsunekan_appearance left0=500 top0=30 rule=r_rub_clockwise nofo_txt=true]
 
 　諸戸さんは私を初音館の表に連れ出した。[plc]
 
 　｜土瀝青《アスファルト》舖裝もない露地で子供らが歓声《かんせい》を上げて走り回っている。[lr]
 　子供らが走り回る度に、露出した地面から小さな砂埃が巻き上がる。[plc]
 
-	[fg fn="諸戸_通常" pos=&pos.l2l]
+	[fg fn=moro_nor pos=&pos.l2l]
 「彼らが証人だよ。正確にはとっかかりに過ぎないけれども」[plc]
 
-	[fg fn="蓑浦_和装" face="蓑浦_口_開き,蓑浦_眼_普通,蓑浦_眉_怒り" layer=1 pos=&pos.l2r]
+	[fg fn=mino_body_wa face=mino_kuchi_hiraki,mino_me_nor,mino_mayu_ikari layer=1 pos=&pos.l2r]
 「彼らって、あの子供達ですか？　めんない千鳥で遊んでいるだけですが」[plc]
 
 「なんだね、その〝めんない千鳥《ち どり》〟と云うのは」[plc]
 
-	[fg fn="蓑浦_和装" face="蓑浦_口_微笑,蓑浦_眼_普通,蓑浦_眉_普通" layer=1 pos=&pos.l2r]
+	[fg fn=mino_body_wa face=mino_kuchi_hohoemi,mino_me_nor,mino_mayu_nor layer=1 pos=&pos.l2r]
 「ああ。子供の遊びですよ。〝目ぇが無い千鳥〟が訛《なま》った意味で、鬼が目隱しをし、追われる者が手拍子や聲《こえ》で囃《はや》し立ててヒントを與《あた》える目隱《め かく》し鬼遊びですよ」[plc]
 
-	[fg fn="諸戸_異様" pos=&pos.l2l]
+	[fg fn=moro_strange pos=&pos.l2l]
 「ははあ、つまり目が見えないのを良いことに彼方《あちら》此方《こちら》をまさぐり鬼神《き しん》の如《ごと》く責め立てる遊戲《プレイ》を行なう卑猥《ひ わい》な……」[plc]
 
-	[fg fn="蓑浦_和装" face="蓑浦_口_開き,蓑浦_眼_普通,蓑浦_眉_怒り" layer=1 pos=&pos.l2r]
-「違います！　子供たちはそんな事しません[tcy t="!!"]」[plc]
+	[fg fn=mino_body_wa face=mino_kuchi_hiraki,mino_me_nor,mino_mayu_ikari layer=1 pos=&pos.l2r]
+「違います！　子供たちはそんな事しません[tcy t=!!]」[plc]
 
-	[fg fn="諸戸_通常" pos=&pos.l2l]
+	[fg fn=moro_nor pos=&pos.l2l]
 「はて。遊里《ゆう り》で藝者《げい しゃ》を追い回して捕まったら罸《ばつ》を受けさせる遊戲も〝目ン無い千鳥〟と云ったはずなのだがなぁ」[plc]
 
-	[fg fn="蓑浦_和装" face="蓑浦_口_普通,蓑浦_汗,蓑浦_眼_普通,蓑浦_眉_憂い" layer=1 pos=&pos.l2r]
-「そうなんですか[tcy t="!?"]　……というか……知ってて聞きましたね」[plc]
+	[fg fn=mino_body_wa face=mino_kuchi_nor,mino_ase,mino_me_nor,mino_mayu_urei layer=1 pos=&pos.l2r]
+「そうなんですか[tcy t=!?]　……というか……知ってて聞きましたね」[plc]
 
 　私の恨めしげな目線を躱《かわ》すかのように一人の児童を呼び寄せる。板塀にしゃがんでもたれ掛かり、子を膝に座らせる。[plc]
 
-	[fg fn="児童" layer=2 pos=&pos.l3c]
+	[fg fn=children layer=2 pos=&pos.l3c]
 　諸戸さんは子供の扱いが上手い。人附き合いは苦手なのに不思議だが、私も感心せざるを得ない。[lr]
 　子供がどうすれば安心するのかをよく知っているかのようだ。[plc]
 
 
-	[grp bg="砂利道" l0="black" o0=0.8 l1="諸戸_通常" pos1=&pos.l2l l2="蓑浦_和装" f2="蓑浦_口_普通,蓑浦_眼_半開き,蓑浦_眉_普通" pos2=&pos.l2r nofi_txt=true nofo_txt=true]
+	[grp bg=gravel_road l0=black o0=0.8 l1=moro_nor pos1=&pos.l2l l2=mino_body_wa f2=mino_kuchi_nor,mino_me_hanbiraki,mino_mayu_nor pos2=&pos.l2r nofi_txt=true nofo_txt=true]
 　──「子供の頃はあまりいい思い出がない」のに？[plc]
 
 　いや、｜だからか《*》。｜どうされたくないか《*》を身に染みて知っているからこそ、厭がる事を避けられるのかも知れない。[plc]
@@ -555,18 +555,18 @@
 　──彼の過去には何があったのだろう？[plc]
 
 
-	[grp bg="砂利道" l0="諸戸_通常" pos0=&pos.l2l o0=1 l1="蓑浦_和装" f1="蓑浦_口_普通,蓑浦_眼_半開き,蓑浦_眉_普通" pos1=&pos.l2r l2="児童" pos2=&pos.l3c nofi_txt=true nofo_txt=true]
+	[grp bg=gravel_road l0=moro_nor pos0=&pos.l2l o0=1 l1=mino_body_wa f1=mino_kuchi_nor,mino_me_hanbiraki,mino_mayu_nor pos1=&pos.l2r l2=children pos2=&pos.l3c nofi_txt=true nofo_txt=true]
 「さあ、お菓子をあげるからこないだの話をこの蓑浦君にも聞かせてくれたまえ」[plc]
 
 　そう云って諸戸さんは浴衣《ゆかた》の懐《ふところ》から紙箱を取り出す。[plc]
 
 「今年二月、大阪の三越で新發売されたグリコというキャラメルだよ」[plc]
 
-	[fg fn="蓑浦_和装" face="蓑浦_口_普通,蓑浦_眼_普通,蓑浦_眉_普通" layer=1 pos=&pos.l2r]
+	[fg fn=mino_body_wa face=mino_kuchi_nor,mino_me_nor,mino_mayu_nor layer=1 pos=&pos.l2r]
 「｜浮名糖《カラメル》？」[plc]
 
 	; *** BGM ***
-	[bgm fn="free04" time=2000]
+	[bgm fn=free04 time=2000]
 「いや、｜軽目焼《かる め やき》ではなくキャラメルさ。確かに語源は同じ西班牙《スペイン》・葡萄牙《ポルトガル》語のｃａｒａｍｅｌｏだが、こいつには牛乳が入っている上、牡蠣《かき》の煮汁からグリコーゲンを採取し、それを中に入れた栄養菓子ということだ。｜口上《こうじょう》は薬種《やくしゅ》屋らしい菓子だが、美味さは折り紙附きだよ」[plc]
 
 　確かに菓子一つ取っても大正時代の最先端をリードしているのは天皇がおわす東京ではなく神戸・大阪だ。今や経済も文化も侮《あなど》れない勢いがある。[plc]
@@ -580,9 +580,9 @@
 
 　オーマイガッ、と外人のような反作用《リアクション》。[plc]
 
-「昨年發売された東京菓子株式会社のカルミンを食べたか[tcy t="!?"]　カリコリ食べる錠剤みたいな錠剤《タブレット》！　すっぱいだけで魚の骨を囓《かじ》ってるみたいだ！」[plc]
+「昨年發売された東京菓子株式会社のカルミンを食べたか[tcy t=!?]　カリコリ食べる錠剤みたいな錠剤《タブレット》！　すっぱいだけで魚の骨を囓《かじ》ってるみたいだ！」[plc]
 
-	[fg fn="蓑浦_和装" face="蓑浦_口_普通,蓑浦_汗,蓑浦_眼_普通,蓑浦_眉_憂い" layer=1 pos=&pos.l2r]
+	[fg fn=mino_body_wa face=mino_kuchi_nor,mino_ase,mino_me_nor,mino_mayu_urei layer=1 pos=&pos.l2r]
 「それが好きな人も居るんじゃないですか」[plc]
 
 「だめだ！　甘くない菓子など僕は認めない！　……そうだ、｜貯古《チョコ》だ。｜加加阿《カカオ》をふんだんに使った｜貯古齡糖《チョコレート》を作るべきだ！　東京菓子なんて狭い土地の名前も捨てて、ここは大きく明治製菓と變《か》えるべきだ！」[plc]
@@ -597,14 +597,14 @@
 
 
 	; *** BGM ***
-	[bgm fn="free34" time=2000]
+	[bgm fn=free34 time=2000]
 　子供は目を輝かせて、両手でキャラメルを頬張る。[plc]
 
 「どうだい？　美味いだろう？　さぁ、話を聞かせてくれ」[plc]
 
 　満面の笑みがその答えだ。[plc]
 
-	[fg fn="初音館_外観" layer=2 left=500 top=30]
+	[fg fn=hatsunekan_appearance layer=2 left=500 top=30]
 「誰かこの板塀の向こうで歩かなかったかい？　カランコロンという下駄の音が聞こえただろう？」[plc]
 
 「ううん、聞こえなかったよ」[plc]
@@ -613,7 +613,7 @@
 　犯人は元元《もともと》中に居た。[lr]
 　それは──諸戸さん自身も容疑者である事を指し示す。[plc]
 
-	[fg fn="諸戸_異様" pos=&pos.l2l]
+	[fg fn=moro_strange pos=&pos.l2l]
 「蓑浦君。君の想像には誤りがあるよ。この事件に關する新聞を隅から隅まで暗記するほど読んだ僕にはね、犯人は｜外部から初音館に訪れ《*》、女生徒を殺害し、そして去っていった形跡があるという情報があるのだ」[plc]
 
 　そうだ。それは確かに新聞報道にあった。[plc]
@@ -625,11 +625,11 @@
 「初音館の周辺は舖裝されておらず、僕らのように下駄で歩けばカラコロジャラリと音がする。しかし、初音館には｜下駄の足音がしない住人《*》が居るだろう？」[plc]
 
 	; *** BG ***
-	[grp bg="black" rule="上下分割ノイズ散布" nofi_txt=true]
+	[grp bg=black rule=r_ulspl_noise nofi_txt=true]
 	; *** BGM ***
-	[bgm fn="free54" time=2000]
+	[bgm fn=free54 time=2000]
 	[wait time=2000]
-	[grp bg="初音館_犯行現場" l2="小鳥遊" pos2=&pos.l3c rule="右回りにこするの" nofo_txt=true]
+	[grp bg=hatsunekan_crime_scene l2=takanashi pos2=&pos.l3c rule=r_rub_clockwise nofo_txt=true]
 「そんなことで己《おれ》にたどり着いたというわけか」[plc]
 
 　小鳥遊が呆《あき》れてグッタリとうなだれる。[plc]
@@ -642,16 +642,16 @@
 	[fg layer=2]
 　小鳥遊は観念したように、憲兵に引っ立てられていった。[plc]
 
-	[fg fn="諸戸_通常" pos=&pos.l2l]
+	[fg fn=moro_nor pos=&pos.l2l]
 ｜「
 ;#USE-FONT	癸羊明朝cff
-	[span layout='fontFamily="癸羊明朝cff"']
+;	[span layout='fontFamily=癸羊明朝cff']
 ｜【朝雲暮雨《　ち ょう うん ぼ う》】【｜巫山《ふ ざん》の雲雨《うん う》】【雲雨の交わり】
 ;#USE-FONT	IPA明朝cff
-	[span layout='fontFamily="IPA明朝cff"']
+;	[span layout='fontFamily=IPA明朝cff']
 とは忍んで行なう男女の契《ちぎ》りを云う。｜楚《そ》の懐王《かいおう》が夢の中で｜四川《し せん》・｜湖北《こ ほく》両省の境にある巫山の神女と親しくなった故事から來た言葉だ」[plc]
 
-	[fg fn="蓑浦_和装" face="蓑浦_口_開き,蓑浦_眼_普通,蓑浦_眉_怒り" layer=1 pos=&pos.l2r]
+	[fg fn=mino_body_wa face=mino_kuchi_hiraki,mino_me_nor,mino_mayu_ikari layer=1 pos=&pos.l2r]
 「それはもしかして……女生徒の握り締めていた『雨女』の事ですか？」[plc]
 
 「そう。あの絵はその神女を諧謔《かいぎゃく》……茶化《ちゃ か》した物なんだ」[plc]
@@ -660,24 +660,24 @@
 
 「そう。｜博識《はくしき》の文化人で絵師である鳥山石燕は、妖怪絵で世の中を笑い飛ばしていったんだよ」[plc]
 
-	[fg fn="蓑浦_和装" face="蓑浦_口_普通,蓑浦_眼_普通,蓑浦_眉_普通" layer=1 pos=&pos.l2r]
+	[fg fn=mino_body_wa face=mino_kuchi_nor,mino_me_nor,mino_mayu_nor layer=1 pos=&pos.l2r]
 「この絵が……笑い飛ばしている？」[plc]
 
 
 	; *** BGM ***
-	[bgm fn="free56" time=2000]
+	[bgm fn=free56 time=2000]
 
-	[fg fn="諸戸_異様" pos=&pos.l2l]
+	[fg fn=moro_strange pos=&pos.l2l]
 「まぁ……｜闊達《かったつ》な笑いと云うより、皮肉めいた笑いが多分に含まれているがね」[plc]
 
 「手のひらを嘗めていますね……？　これは？」[plc]
 
 「全て辞書に載っているよ、蓑浦君。
 ;#USE-FONT	癸羊明朝cff
-	[span layout='fontFamily="癸羊明朝cff"']
+;	[span layout='fontFamily=癸羊明朝cff']
 【手を舐《ねぶ》る】
 ;#USE-FONT	IPA明朝cff
-	[span layout='fontFamily="IPA明朝cff"']
+;	[span layout='fontFamily=IPA明朝cff']
 とは、手に唾《つば》をつけて氣負い込む事を云うのさ。宇治拾遺物語《うじしゅういものがたり》に『われをとく得むと、手をねぶりつる軍《いくさ》どもうせにけり』とね」[plc]
 
 
@@ -687,20 +687,20 @@
 
 「また
 ;#USE-FONT	癸羊明朝cff
-	[span layout='fontFamily="癸羊明朝cff"']
+;	[span layout='fontFamily=癸羊明朝cff']
 【手を食う】
 ;#USE-FONT	IPA明朝cff
-	[span layout='fontFamily="IPA明朝cff"']
+;	[span layout='fontFamily=IPA明朝cff']
 という言葉がある。その手は桑名の焼き蛤《はまぐり》、と云うだろう？　あの逆さ。まんまと計略にはまる事を云う」[plc]
 
 　──つい騙されてしまう女。[plc]
 
 「
 ;#USE-FONT	癸羊明朝cff
-	[span layout='fontFamily="癸羊明朝cff"']
+;	[span layout='fontFamily=癸羊明朝cff']
 【手が空《あ》けば口が開《あ》く】
 ;#USE-FONT	IPA明朝cff
-	[span layout='fontFamily="IPA明朝cff"']
+;	[span layout='fontFamily=IPA明朝cff']
 とは、『仕事がなければ食べていけない』という意味の他に、『暇になるとむだなお喋《しゃべ》りが多くなる』という意味もある」[plc]
 
 「これぞ口は災いの元だな。社会に何の貢献もせずむやみに發情し、あちこちに愛の言葉を囁くなど、」[plc]
@@ -708,29 +708,29 @@
 　大学でも下宿でも〝生來の女嫌い〟とも目《もく》される諸戸さんの舌鋒は鋭さを増す。[lr]
 　女生徒の死んでいた部屋でずいぶん厳しい物云いだ。[plc]
 
-	[fg fn="蓑浦_和装" face="蓑浦_口_開き,蓑浦_眼_普通,蓑浦_眉_怒り" layer=1 pos=&pos.l2r]
+	[fg fn=mino_body_wa face=mino_kuchi_hiraki,mino_me_nor,mino_mayu_ikari layer=1 pos=&pos.l2r]
 「諸戸さん、亡くなった方をそう悪く云わないで下さい」[plc]
 
 
 	; *** BGM ***
 	[fadeoutbgm time=2000]
 
-	[fg fn="諸戸_通常" pos=&pos.l2l]
+	[fg fn=moro_nor pos=&pos.l2l]
 「……すまない。僕はどうも興奮すると我を忘れてしまうようだ」[plc]
 
 　一つ咳払いをして、仕切り直す。[plc]
 
 
 	; *** BGM ***
-	[bgm fn="free34" time=2000]
+	[bgm fn=free34 time=2000]
 
 「僕が云いたかったのは──彼女は犯人を指し示しつつ、自らを自嘲する図画《ず が》を選んだのかも知れないという事なんだ」[plc]
 
-	[fg fn="蓑浦_和装" face="蓑浦_口_普通,蓑浦_眼_普通,蓑浦_眉_普通" layer=1 pos=&pos.l2r]
+	[fg fn=mino_body_wa face=mino_kuchi_nor,mino_me_nor,mino_mayu_nor layer=1 pos=&pos.l2r]
 「どういう事ですか？」[plc]
 
 
-	[grp bg="山道"]
+	[grp bg=mountain_trail]
 「蓑浦君。君は盛唐《せいとう》の詩人・｜杜甫《と ほ》を知っているかい？」[plc]
 
 
@@ -739,11 +739,11 @@
 
 「その杜甫が記した『｜貧交行《ひん こう こう》』にこうある」[plc]
 
-	[se fn="PageD@16"]
-	[fg fn="杜甫" layer=2 left=360 top=0 rule="左から右へ"]
+	[se fn=PageD_16]
+	[fg fn=toho layer=2 left=360 top=0 rule=r_l2r]
 
 ;#USE-FONT	癸羊明朝cff
-	[span layout='fontFamily="癸羊明朝cff"']
+;	[span layout='fontFamily=癸羊明朝cff']
 杜甫《と ほ》　『｜貧交行《ひん こう こう》』[lr]
 [r]
 　　翻手作雲覆手雨[lr]
@@ -751,7 +751,7 @@
 　　君不見管鮑貧時交[lr]
 　　此道今人棄如土[plc]
 
-	[span layout='fontFamily="癸羊明朝cff"']
+;	[span layout='fontFamily=癸羊明朝cff']
 　手を翻《ひるがえ》せば雲と作《な》り手を覆《くつがえ》せば雨となる。[lr]
 　薄れていく義理や人情は絶え間なく、｜枚挙《まいきょ》に暇《いとま》がない。[lr]
 　勢いがあるときは良いが、落ちぶれるとそれっきり。[lr]
@@ -764,14 +764,14 @@
 
 
 ;#USE-FONT	癸羊明朝cff
-	[span layout='fontFamily="癸羊明朝cff"']
+;	[span layout='fontFamily=癸羊明朝cff']
 【手を翻せば雲となり、手を覆せば雨となる】[lr]
 ;#USE-FONT	IPA明朝cff
-	[span layout='fontFamily="IPA明朝cff"']
+;	[span layout='fontFamily=IPA明朝cff']
 　人情が變わりやすく頼みにならないたとえだ。[plc]
 
 
-	[fg fn="石燕引用_雨女" layer=2 rule="こすり(上から下へ)"]
+	[fg fn=sakien_ameonna layer=2 rule=r_kosuri_u2d]
 
 「『雨女』には燈篭《とう ろう》も描かれている。雨女と雨だけでいいはずなのに、わざとだ。これにもちゃんと意味が込められている」[plc]
 
@@ -794,15 +794,15 @@
 
 
 	; *** BGM ***
-	[bgm fn="free54" time=2000]
+	[bgm fn=free54 time=2000]
 
-	[grp bg="石畳_夕暮れ" rule="雲模様"]
+	[grp bg=cobblestone_twilight rule=r_kumo]
 「
 ;#USE-FONT	癸羊明朝cff
-	[span layout='fontFamily="癸羊明朝cff"']
+;	[span layout='fontFamily=癸羊明朝cff']
 【｜灯籠鬢《とうろうびん》】
 ;#USE-FONT	IPA明朝cff
-	[span layout='fontFamily="IPA明朝cff"']
+;	[span layout='fontFamily=IPA明朝cff']
 という女の髮の結い方がある。左右の鬢《びん》に鯨鬚《くじらひげ》製の鬢差《びんさし》を入れて張り出させたものだ。中空だから中が透けて見え、灯籠に似ている事から名が附いたのさ。全体像が灯籠の笠に似ているから、という説もある。明和（一七六四～一七七二）・安永（一七七二～一七八一）から享和（一八〇一～一八〇四）年間にかけて遊里で流行したらしい。透鬢《すき びん》という呼び方もある」[plc]
 
 「でも、『雨女』の髮は解《ほど》かれしまい、灯籠鬢は結ってないですよね」[plc]
@@ -823,20 +823,20 @@
 
 
 	; *** BG ***
-	[grp bg="white" rule="上下分割ノイズ散布" nofi_txt=true]
+	[grp bg=white rule=r_ulspl_noise nofi_txt=true]
 	[wait time=2000]
 
 	; *** BGM ***
-	[bgm fn="free04" time=2000]
+	[bgm fn=free04 time=2000]
 
-	[grp bg="散策" rule="右回りにこするの" nofo_txt=true]
+	[grp bg=stroll rule=r_rub_clockwise nofo_txt=true]
 
 　諸戸さんの探偵により事件は解決した。[lr]
 　ようやく初音館に平穏が戻ったのだ。[plc]
 
 　私は彼の秀才ぶりに唯唯《ただただ》感心し、尊敬の想いを重ねるばかりだ。[plc]
 
-	[fg fn="諸戸_通常" pos=&pos.l2l]
+	[fg fn=moro_nor pos=&pos.l2l]
 「恋愛という物は時に人を盲目にするね。恥も外聞もない、めんない千鳥だ」[plc]
 
 　──「｜巫山戯《ふざけ》るなッ！」[plc]
@@ -854,9 +854,9 @@
 
 
 	; *** BG ***
-	[grp bg="black" time=2000 sys_menu=false nofi_txt=true]
+	[grp bg=black time=2000 sys_menu=false nofi_txt=true]
 
 	[wait time=1000]
 
 
-[jump fn="main" label=*title]
+[jump fn=main label=*title]
