@@ -1,4 +1,4 @@
-# Novelgame(Tate-gaki) sample project
+# Novelgame(Yoko-gaki) sample project
 [![MIT License](https://img.shields.io/github/license/famibee/SKYNovel_uc.svg)](LICENSE)
 ![](https://img.shields.io/badge/platform-windows%20%7C%20macos-lightgrey.svg)
 
@@ -12,7 +12,7 @@
 ---
 ## description（説明）
 
-[梶井基次郎「桜の樹の下には」](https://www.aozora.gr.jp/cards/000074/card427.html)をノベルゲーム化したものです。
+[江戸川乱歩](https://www.aozora.gr.jp/index_pages/person1779.html)「孤島の鬼」二次創作ノベルゲームサンプルです。
 
 ![桜の樹の下には](build/manual_th.jpg)
 
