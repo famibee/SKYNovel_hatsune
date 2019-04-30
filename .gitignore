@@ -1,0 +1,24 @@
+# Visual Studio Code cache/options directory
+.vscode/
+
+# アプリ版メインjs
+app/index.js
+
+# Build results
+build/*.yaml
+build/*.yml
+build/mac
+build/桜*
+build/cordova
+
+# Android/iOS build
+mobile/
+
+# Node.js Tools
+node_modules/
+
+# ブラウザ版メインjs
+web/
+
+# SKYNovel Dev famibee's Work Folder
+Work/
