@@ -3,10 +3,11 @@
 	; *** テキストレイヤ横書きWide下設定 ***
 	[txt_lay_h_bottom_wide]
 	; *** BG ***
-;	[lay layer=mes page=back layout='fontFamily=ipam']
 	[grp bg=white time=1500 sys_menu=false b_alpha=0]
 [r]
+	[span style='font-family: QuiMi_mincho;']
 　君の部屋に行こう[waitclick][r]
+	[span style='font-family: ipamjm;']
 　君の部屋に行こう[plc visible=false]
 
 [r][r][r][r]
@@ -27,10 +28,10 @@
 	[bgm fn=free04]
 
 [r]
-;;	[span layout='fontFamily=癸羊明朝cff']
+	[span style='font-family: QuiMi_mincho;']
 　大正十一年（一九二二年）四月｜朔日《ついたち》[r]
 　　──神田、｜初音館《はつ ね かん》
-;;	[span layout='fontFamily=IPA明朝cff']
+	[span style='font-family: ipamjm;']
 [plc visible=false]
 
 
@@ -194,6 +195,7 @@
 　町並みはここ數年で｜瓦斯《ガ ス》灯が消え去り、タングステン電球の街灯が夜道を照らしている。[lr]
 　なのに道路は舖裝が追いつかず、土が露出した地面を下駄で歩けばカラコロジャラリと音がする。[plc]
 
+
 	; *** テキストレイヤ横書きWide下設定 ***
 	[txt_lay_h_bottom_wide b_alpha=0.8]
 	[grp bg=night_road]
@@ -208,14 +210,6 @@
 
 〝引いた手が外れそうになると彼は烈《はげ》しい情熱をもって私の指をしめつけた。[lr]
 　私は無心を粧《よそお》って、しかし、やや胸をときめかしながら、彼のなすがままに任せた。といって、決して私は彼の手を握り返すことはしなかったのである〟[plc]
-
-
-[jump label=*skip2end]
-
-;	[アルバム解放 name=free32]
-
-
-
 
 
 	; *** テキストレイヤ横書きWide下設定 ***
@@ -295,6 +289,7 @@
 	[fg fn=mino_base face=mino_kuchi_hiraki,mino_hoho,mino_ase,mino_me_toji,mino_mayu_urei]
 　そういいわけするようにして彼は細首の花瓶を磨《みが》くかのように手を差し伸ばす。[plc]
 
+
 	; *** BG ***
 	[grp bg=bath_tub se=mizu07 nofi_txt=true]
 	[wait time=2000]
@@ -327,6 +322,14 @@
 「いいんだ。……僕の事はいいんだよ。君の話を聞かせてくれたまえ」[plc]
 
 　諸戸さんは自分の事を、あまり話そうとしないのだった。[plc]
+
+
+
+
+[jump label=*skip2end]
+
+;	[アルバム解放 name=free32]
+
 
 
 	[grp bg=hatsunekan_gate]
@@ -389,7 +392,10 @@
 　瞳の色は、既に自分を取り戻している。[lr]
 　いつも私をじっと見ている、あの目だ。[plc]
 
-「君の予定も狂わせてしまったようだ。僕が奢《おご》るから、お化け屋敷に行こう」[plc]
+「君の予定も狂わせてしまったようだ。僕が奢《おご》るから、お化け屋敷に行こう」[lr]
+
+　それから諸戸さんは、私を映画よりもお化け屋敷に誘うようになった。[lr]
+　私にくっついてないと居られないほど怖がりだというのに。[plc]
 
 
 	; *** BGM ***
@@ -409,16 +415,15 @@
 　女生徒が殺害されていたのは空いている部屋で、學生が酒盛りしたり荷物置き場に使われる誰でも入れる共有の部屋で、發見時は鍵も掛かっていなかった。[lr]
 　その中で女生徒は、江戸時代の妖怪絵を一枚握り締め、息絶えていたのだ。[plc]
 
-	; *** テキストレイヤ縦書き左設定 ***
-	[txt_lay_v_left b_alpha=0 fcol=0xFFFFFF]
+	; *** テキストレイヤ横書きWide下設定 ***
+	[txt_lay_h_bottom_wide b_alpha=0 fcol=0xFFFFFF]
 
 	[se fn=BellC_11]
 	[img fn=sakien_syuui_chu_kiri layer=2]
 	[trans layer=mes,2 time=1000 rule=r_uzumaki]
 	[wt]
 
-;#USE-FONT	癸羊明朝cff
-;	[span layout='fontFamily=癸羊明朝cff']
+	[span style='font-family: QuiMi_mincho;']
 鳥山石燕《とり やま せき えん》　｜『今昔百鬼拾遺《　こ んじ ゃく ひゃ っき しゅ うい》』中之巻　霧[lr]
 
 	[se fn=PageD_16]
@@ -429,15 +434,14 @@
 　朝《あした》には雲《くも》となり、[lr]
 　夕《ゆうべ》には雨《あめ》となるとかや。[lr]
 　雨《あめ》女もかゝる類《たぐゐ》のものなりや。[plc]
-;#USE-FONT	IPA明朝cff
 
 　犯人は外部から初音館に訪れ、女生徒を殺害し、そして去っていった形跡があるという。[lr]
 　自らが暮らす下宿での事件の詳細を、新聞越しに知る奇妙な感覚。[plc]
 
 　初音館の住人、家主、｜關係《かんけい》者が取り調べを受けたが、犯人は一週間経っても特定されなかった。[plc]
 
-	; *** テキストレイヤ縦書き左設定 ***
-	[txt_lay_v_left]
+	; *** テキストレイヤ横書きWide下設定 ***
+	[txt_lay_h_bottom_wide]
 	[grp bg=tatami]
 
 　自分の住む下宿で殺人が起こり、犯人と同居しているかも知れないという不安は住人全てを不安にさせた。[lr]
@@ -501,8 +505,8 @@
 〝君へのお詫び心なんです〟[plc]
 
 
-	; *** テキストレイヤ縦書き左設定 ***
-	[txt_lay_v_left b_alpha=0.8]
+	; *** テキストレイヤ横書きWide下設定 ***
+	[txt_lay_h_bottom_wide b_alpha=0.8]
 	; *** BG ***
 	[grp bg=black rule=r_ulspl_noise nofi_txt=true]
 	[wait time=2000]
@@ -644,11 +648,9 @@
 
 	[fg fn=moro_nor pos=&pos.l2l]
 ｜「
-;#USE-FONT	癸羊明朝cff
-;	[span layout='fontFamily=癸羊明朝cff']
+	[span style='font-family: QuiMi_mincho;']
 ｜【朝雲暮雨《　ち ょう うん ぼ う》】【｜巫山《ふ ざん》の雲雨《うん う》】【雲雨の交わり】
-;#USE-FONT	IPA明朝cff
-;	[span layout='fontFamily=IPA明朝cff']
+	[span style='font-family: ipamjm;']
 とは忍んで行なう男女の契《ちぎ》りを云う。｜楚《そ》の懐王《かいおう》が夢の中で｜四川《し せん》・｜湖北《こ ほく》両省の境にある巫山の神女と親しくなった故事から來た言葉だ」[plc]
 
 	[fg fn=mino_body_wa face=mino_kuchi_hiraki,mino_me_nor,mino_mayu_ikari layer=1 pos=&pos.l2r]
@@ -673,11 +675,9 @@
 「手のひらを嘗めていますね……？　これは？」[plc]
 
 「全て辞書に載っているよ、蓑浦君。
-;#USE-FONT	癸羊明朝cff
-;	[span layout='fontFamily=癸羊明朝cff']
+	[span style='font-family: QuiMi_mincho;']
 【手を舐《ねぶ》る】
-;#USE-FONT	IPA明朝cff
-;	[span layout='fontFamily=IPA明朝cff']
+	[span style='font-family: ipamjm;']
 とは、手に唾《つば》をつけて氣負い込む事を云うのさ。宇治拾遺物語《うじしゅういものがたり》に『われをとく得むと、手をねぶりつる軍《いくさ》どもうせにけり』とね」[plc]
 
 
@@ -686,21 +686,17 @@
 
 
 「また
-;#USE-FONT	癸羊明朝cff
-;	[span layout='fontFamily=癸羊明朝cff']
+	[span style='font-family: QuiMi_mincho;']
 【手を食う】
-;#USE-FONT	IPA明朝cff
-;	[span layout='fontFamily=IPA明朝cff']
+	[span style='font-family: ipamjm;']
 という言葉がある。その手は桑名の焼き蛤《はまぐり》、と云うだろう？　あの逆さ。まんまと計略にはまる事を云う」[plc]
 
 　──つい騙されてしまう女。[plc]
 
 「
-;#USE-FONT	癸羊明朝cff
-;	[span layout='fontFamily=癸羊明朝cff']
+	[span style='font-family: QuiMi_mincho;']
 【手が空《あ》けば口が開《あ》く】
-;#USE-FONT	IPA明朝cff
-;	[span layout='fontFamily=IPA明朝cff']
+	[span style='font-family: ipamjm;']
 とは、『仕事がなければ食べていけない』という意味の他に、『暇になるとむだなお喋《しゃべ》りが多くなる』という意味もある」[plc]
 
 「これぞ口は災いの元だな。社会に何の貢献もせずむやみに發情し、あちこちに愛の言葉を囁くなど、」[plc]
@@ -742,8 +738,7 @@
 	[se fn=PageD_16]
 	[fg fn=toho layer=2 left=360 top=0 rule=r_l2r]
 
-;#USE-FONT	癸羊明朝cff
-;	[span layout='fontFamily=癸羊明朝cff']
+	[span style='font-family: QuiMi_mincho;']
 杜甫《と ほ》　『｜貧交行《ひん こう こう》』[lr]
 [r]
 　　翻手作雲覆手雨[lr]
@@ -751,23 +746,20 @@
 　　君不見管鮑貧時交[lr]
 　　此道今人棄如土[plc]
 
-;	[span layout='fontFamily=癸羊明朝cff']
+	[span style='font-family: QuiMi_mincho;']
 　手を翻《ひるがえ》せば雲と作《な》り手を覆《くつがえ》せば雨となる。[lr]
 　薄れていく義理や人情は絶え間なく、｜枚挙《まいきょ》に暇《いとま》がない。[lr]
 　勢いがあるときは良いが、落ちぶれるとそれっきり。[lr]
 　管鮑──管仲《かんちゅう》と鮑淑《ほうしゅく》は貧乏から出世しても一生變わらぬ友情を育《はぐく》んだというのに。[lr]
 　今時の人々にとってそれらは土のように捨て去る物なのだ。[plc]
-;#USE-FONT	IPA明朝cff
 
 
 「｜詩聖《し せい》杜甫ともあろうものが七字に統一できず三行目が一文字多いが、僕は敢《あ》えて古詩《こ し》形式にしたと睨んでいる。古詩は韻を踏むだけで、｜平仄《ひょうそく》や｜句數《く すう》に制限を課さない、俳句で云えば自由律というやつなんだ。古い形式にする事で、この詩の普遍性を詠《うた》ったのだろうと」[plc]
 
 
-;#USE-FONT	癸羊明朝cff
-;	[span layout='fontFamily=癸羊明朝cff']
+	[span style='font-family: QuiMi_mincho;']
 【手を翻せば雲となり、手を覆せば雨となる】[lr]
-;#USE-FONT	IPA明朝cff
-;	[span layout='fontFamily=IPA明朝cff']
+	[span style='font-family: ipamjm;']
 　人情が變わりやすく頼みにならないたとえだ。[plc]
 
 
@@ -798,11 +790,9 @@
 
 	[grp bg=cobblestone_twilight rule=r_kumo]
 「
-;#USE-FONT	癸羊明朝cff
-;	[span layout='fontFamily=癸羊明朝cff']
+	[span style='font-family: QuiMi_mincho;']
 【｜灯籠鬢《とうろうびん》】
-;#USE-FONT	IPA明朝cff
-;	[span layout='fontFamily=IPA明朝cff']
+	[span style='font-family: ipamjm;']
 という女の髮の結い方がある。左右の鬢《びん》に鯨鬚《くじらひげ》製の鬢差《びんさし》を入れて張り出させたものだ。中空だから中が透けて見え、灯籠に似ている事から名が附いたのさ。全体像が灯籠の笠に似ているから、という説もある。明和（一七六四～一七七二）・安永（一七七二～一七八一）から享和（一八〇一～一八〇四）年間にかけて遊里で流行したらしい。透鬢《すき びん》という呼び方もある」[plc]
 
 「でも、『雨女』の髮は解《ほど》かれしまい、灯籠鬢は結ってないですよね」[plc]

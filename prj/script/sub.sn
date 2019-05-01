@@ -1,5 +1,4 @@
 ;#USE-FONT	ipam
-;	[loadplugin fn="ipam"]	; この行は触らないで下さい
 ;********************************************************
 ;	定数
 ;********************************************************
@@ -12,6 +11,9 @@
 
 ; メッセージウインドウにボタンを配置するか（システムメニュー）
 &useSysMenu = true
+
+; デフォルトフォント
+&def_fonts = 'ipamjm, QuiMi_mincho'
 
 ; 立ち絵配置位置定数
 ;	[lay pos=&pos.l	等として使用。
@@ -76,7 +78,7 @@
 
 	; テキストレイヤ全画面設定
 	[txt_lay_fullscreen b_alpha=0 no_sysmenu_draw=true]
-	[lay layer="mes" page=back layout='fontFamily="ipam" fontLookup="embeddedCFF"']
+	[lay layer="mes" page=back style="&'font-family: #{def_fonts};'"]
 	[grp bg="black" sys_menu=false b_alpha=0 time=0]
 
 	[record_place layer=&dsp_lays]
@@ -181,7 +183,7 @@
 	;	b_color=%b_color|'#ffffff'	; 背後に画像を使わない
 		b_alpha=%b_alpha|1
 	;	b_alpha_isfixed=true	; コメント外すと透過度変更禁止
-		style="&'color: #{fcol}; width: #{w}px; height: #{const.sn.config.window.height}px; writing-mode: vertical-rl; padding-left: #{pl}px; padding-right: #{pr}px; padding-top: #{pt}px; padding-bottom: #{pb}px; font-size: 24px; line-height: 1.5;'"]
+		style="&'color: #{fcol}; width: #{w}px; height: #{const.sn.config.window.height}px; writing-mode: vertical-rl; padding-left: #{pl}px; padding-right: #{pr}px; padding-top: #{pt}px; padding-bottom: #{pb}px; font-family: #{def_fonts}; font-size: 24px; line-height: 1.5;'"]
 		; r_color=&fcol r_size=12 max_col=25 bura_col=2 max_row=%max_row|7 onsplit="enter"
 	[sysmenu_draw_v *]
 [endmacro]
@@ -247,7 +249,7 @@
 		b_color=%b_color|0xffffff	; 背後に画像を使わない
 		b_alpha=%b_alpha|1
 	;	b_alpha_isfixed=true	; コメント外すと透過度変更禁止
-		style="&'color: #{fcol}; width: #{const.sn.config.window.width}px; height: #{h}px; writing-mode: horizontal-tb; padding-left: #{pl}px; padding-right: #{pr}px; padding-top: #{pt}px; padding-bottom: #{pb}px; font-size: 24px; line-height: 1.5;'"]
+		style="&'color: #{fcol}; width: #{const.sn.config.window.width}px; height: #{h}px; writing-mode: horizontal-tb; padding-left: #{pl}px; padding-right: #{pr}px; padding-top: #{pt}px; padding-bottom: #{pb}px; font-family: #{def_fonts}; font-size: 24px; line-height: 1.5;'"]
 	[sysmenu_draw_h * h=&h]
 [endmacro]
 
