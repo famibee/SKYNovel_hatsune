@@ -5,9 +5,7 @@
 	; *** BG ***
 	[grp bg=white time=1500 sys_menu=false b_alpha=0]
 [r]
-	[span style='font-family: QuiMi_mincho;']
 　君の部屋に行こう[waitclick][r]
-	[span style='font-family: ipamjm;']
 　君の部屋に行こう[plc visible=false]
 
 [r][r][r][r]
