@@ -1,5 +1,7 @@
 # Change Log
 
+## v1.0.18
+- sn.Button.fontFamily 記述追加
 ## v1.0.17
 - 本文フォントを導入・反映
 ## v1.0.16

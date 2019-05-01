@@ -14,6 +14,7 @@
 
 ; デフォルトフォント
 &def_fonts = 'ipamjm, QuiMi_mincho'
+;&sn.Button.fontFamily = 'ipamjm'
 
 ; 立ち絵配置位置定数
 ;	[lay pos=&pos.l	等として使用。
