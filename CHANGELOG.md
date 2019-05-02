@@ -1,5 +1,8 @@
 # Change Log
 
+## v1.0.19
+- bug：「背後に画像を使わない・単色塗り」際はwidth・heightは省略するようにコメント追加
+- add：ダイアログに使用されている文字フォント追加
 ## v1.0.18
 - sn.Button.fontFamily 記述追加
 ## v1.0.17
