@@ -21,9 +21,11 @@
 	; *** テキストレイヤ横書きWide下設定 ***
 	[txt_lay_h_bottom_wide fcol=white no_sysmenu_draw=true]
 	[grp bg=hatsunekan_entrance time=2000 sys_menu=false b_alpha=0]
+	[アルバム解放 name=hatsunekan_entrance]
 
 	; *** BGM ***
 	[bgm fn=free04]
+	[アルバム解放 name=free04]
 
 [r]
 	[span style='font-family: QuiMi_mincho;']
@@ -36,6 +38,7 @@
 	; *** テキストレイヤ横書きWide下設定 ***
 	[txt_lay_h_bottom_wide]
 	[grp bg=hatsunekan_corridor rule=r_blind_l2r]
+	[アルバム解放 name=hatsunekan_corridor]
 
 	[fg2 fn=mino_body_wa face=mino_kuchi_hohoemi,mino_me_nor,mino_mayu_nor]
 「はじめまして、｜蓑浦《みのうら》金之助《きん の すけ》と申します。｜實業學校《じつぎょうがっこう》の四年生です」[plc]
@@ -154,8 +157,10 @@
 
 	; *** BGM ***
 	[bgm fn=free25 time=2000]
+	[アルバム解放 name=free25]
 
 	[grp bg=univ_auditorium]
+	[アルバム解放 name=univ_auditorium]
 
 [r][r]
 〝諸戸と蓑浦は變《へん》だ〟[plc]
@@ -347,6 +352,7 @@
 
 	; *** BGM ***
 	[bgm fn=free57 time=2000]
+	[アルバム解放 name=free57]
 
 	[se fn=step11]
 	[fg fn=moro_nor layer=1 pos=&pos.l2l]
