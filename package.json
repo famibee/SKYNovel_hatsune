@@ -38,8 +38,8 @@
 		"pack:mac": "npm run webpack:pro && electron-builder ./build/darwin-x64 --platform=mac --arch=x64"
 	},
 	"build": {
-		"appId": "com.fc2.blog.ugainovel.uc",
-		"productName": "桜の樹の下には",
+		"appId": "com.fc2.blog.ugainovel.hatsune",
+		"productName": "初音館にて",
 		"directories": {
 			"output": "build"
 		},
