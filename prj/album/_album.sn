@@ -2,7 +2,7 @@
 	[return cond="const.sn.frm.album"]
 
 	[add_frame id=album src="album/_album.htm" visible=false]
-	[event key='dom=album:#close' label=*exit global=true need_err=false]
+	[event key='dom=album:#close' label=*exit global=true]
 
 
 [macro name="アルバム解放"]
