@@ -1,5 +1,7 @@
 # Change Log
 
+## v1.0.22
+- bug：prj/config/_config.sn に [trace]文が残っていたのを削除
 ## v1.0.21
 - bug：セーブロード画面修正（JavaScript部分のみ）
 ## v1.0.20
