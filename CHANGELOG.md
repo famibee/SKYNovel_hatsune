@@ -1,5 +1,8 @@
 # Change Log
 
+## v1.0.24
+- chg：about-windowをテンプレでのほうへ移動
+- add：メニューに「DevTools」「quit/close」を追加
 ## v1.0.23
 - chg：ファイル更新など
 ## v1.0.22
