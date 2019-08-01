@@ -3,6 +3,7 @@
 
 	[add_frame id=album src="album/_album.htm" visible=false]
 	[event key='dom=album:#close' label=*exit global=true]
+	[add_lay layer=album class=grp]
 
 
 [macro name="アルバム解放"]
@@ -22,7 +23,7 @@
 		{"type": "pic", "fn": "../bg/univ_auditorium.jpg", "title": "大学講堂", "enabled": "#{!!sys:album.univ_auditorium}"},
 		{"type": "pic", "fn": "../bg/hatsunekan_minoura_room.jpg", "title": "初音館_蓑浦部屋", "enabled": "#{!!sys:album.hatsunekan_minoura_room}"},
 		{"type": "pic", "fn": "../bg/gas_lamp.jpg", "title": "ガス灯", "enabled": "#{!!sys:album.gas_lamp}"},
-		{"type": "mov", "fn": "nc10889.mp4", "title": "桜", "enabled": "true"},
+		{"type": "mov", "fn": "nc10889", "title": "桜", "enabled": "true"},
 		{"type": "bgm", "fn": "free10", "title": "free10(BGM)", "enabled": "true"},
 		{"type": "bgm", "fn": "free04", "title": "free04(BGM)", "enabled": "#{!!sys:album.free04}"},
 		{"type": "bgm", "fn": "free25", "title": "free25(BGM)", "enabled": "#{!!sys:album.free25}"},
@@ -32,6 +33,7 @@
 	[set_frame id=album var_name=val_dic text=&dic]
 	[let_frame id=album var_name=init function=true]
 	[event key='dom=album:.bgm' label=*bgm global=true call=true need_err=false]
+	[event key='dom=album:.mov' label=*mov global=true need_err=false]
 
 	[set_frame id=album var_name=val_fnBgm text=&save:const.sn.sound.BGM.fn|'(No BGM)']
 	[let_frame id=album var_name=val2ctrl function=true]
@@ -49,7 +51,7 @@
 	[frame id=album visible=true y=&const.sn.frm.album.height]
 	[tsy_frame id=album time=500 y=0]
 	[wait_tsy id=album]
-
+*wait
 	[event key=rightclick label=*exit]
 	[event key=command label=*exit]
 	[event key=control label=*exit]
@@ -64,6 +66,23 @@
 	[playbgm fn=&sn.event.domdata.arg]
 	[call label=*val2ctrl]
 [return]
+
+; 動画再生
+*mov
+	&vol = sys:const.sn.sound.BGM.volume
+	[fadeoutbgm time=400]
+	[wait time=400]
+
+	[lay layer=album fn=black face=&sn.event.domdata.arg visible=true float=true left=0 top=0]
+	[frame id=album visible=false]
+	[wv fn=&sn.event.domdata.arg]
+
+	[frame id=album visible=true]
+	[lay layer=album fn=black visible=false]
+
+	[volume buf=BGM volume=&vol/100]
+[jump label=*wait]
+
 
 ;*********************************************************
 *exit

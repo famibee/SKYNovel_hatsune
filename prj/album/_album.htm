@@ -14,7 +14,7 @@
 		{"type": "pic", "fn": "../bg/univ_auditorium.jpg", "title": "大学講堂", "enabled": "true"},
 		{"type": "pic", "fn": "../bg/hatsunekan_minoura_room.jpg", "title": "初音館_蓑浦部屋", "enabled": "true"},
 		{"type": "pic", "fn": "../bg/gas_lamp.jpg", "title": "ガス灯", "enabled": "true"},
-		{"type": "mov", "fn": "nc10889.mp4", "title": "桜", "enabled": "true"},
+		{"type": "mov", "fn": "nc10889", "title": "桜", "enabled": "true"},
 		{"type": "bgm", "fn": "free10", "title": "free10(BGM)", "enabled": "true"},
 		{"type": "bgm", "fn": "free04", "title": "free04(BGM)", "enabled": "true"},
 		{"type": "bgm", "fn": "free25", "title": "free25(BGM)", "enabled": "true"},
@@ -43,24 +43,23 @@
 
 			let elm = '';
 			switch (v.type) {
-				case 'pic':	elm = `
-	<div class="card">
-	<div class="card-image"><img src="${v.fn}" class="materialboxed"></div>`;
-					break;
-
-				case 'mov':	elm = `
-	<div class="card" style="margin-bottom: 0px;">
-	<video class="responsive-video" controls>
-		<source src="${v.fn}" type="video/mp4"/>
-	</video>`;
-					break;
-
-				default:	elm = `
+				case 'bgm':	elm = `
 	<div class="card">
 	<div class="card-image waves-effect waves-block waves-light">
 		<img src="thbgm.jpg" class="bgm" data-arg="${v.fn}">
 	</div>`;
 					break;
+
+				case 'mov':	elm = `
+	<div class="card">
+	<div class="card-image waves-effect waves-block waves-light">
+		<img src="${v.fn}_th.jpg" class="mov" data-arg="${v.fn}">
+	</div>`;
+					break;
+
+				default:	elm = `
+	<div class="card">
+	<div class="card-image"><img src="${v.fn}" class="materialboxed"></div>`;
 			}
 			lst.insertAdjacentHTML('beforeend', `
 <div class="col s6 m4 l3 hoverable sld2dsp grey lighten-2">${elm}
