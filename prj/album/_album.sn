@@ -70,8 +70,10 @@
 ; 動画再生
 *mov
 	&vol = sys:const.sn.sound.BGM.volume
+	&fn = save:const.sn.sound.BGM.fn
 	[fadeoutbgm time=400]
 	[wait time=400]
+	[wf buf=BGM]
 
 	[lay layer=album fn=black face=&sn.event.domdata.arg visible=true float=true left=0 top=0]
 	[frame id=album visible=false]
@@ -80,7 +82,8 @@
 	[frame id=album visible=true]
 	[lay layer=album fn=black visible=false]
 
-	[volume buf=BGM volume=&vol/100]
+	[volume buf=BGM volume=&vol]
+	[playbgm fn=&fn cond='fn!=""']
 [jump label=*wait]
 
 
