@@ -1,5 +1,7 @@
 # Change Log
 
+## v1.0.34
+- ロード直前に[sys_resume_save]が実行されてしまう件
 ## v1.0.33
 - bug：BGM音量復帰しても再生されないので、[playbgm]するように
 ## v1.0.32
