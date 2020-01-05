@@ -171,9 +171,9 @@
 	[let name=l text=%l|40]
 	[let name=w text=%w|310]
 	&pl = 26
-	&pt = 66
+	&pt = 42
 	[let name=pr text=%pr|36]
-	&pb = 66
+	&pb = 42
 	[let name=fcol text=%fcol|'white']
 	; こちらの素材をお借りしました。
 	; びたちー素材館　メッセージボックス・メッセージウィンドウ・フレーム　フリー素材 http://www.vita-chi.net/message.htm
