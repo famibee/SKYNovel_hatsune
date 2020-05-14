@@ -1,0 +1,98 @@
+<!doctype html><html lang="ja">
+<head><meta charset="utf-8"/><title>&nbsp;</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../lib/materialize.min.css">
+<style type="text/css">
+	html {user-select: none; -webkit-user-select: none;}	/* 選択禁止 */
+	.card .card-title {margin-left: 0.5em;}		/* 微調整 */
+</style>
+<script defer src="../lib/materialize.min.js"></script>
+<script>
+	let a = [	// アルバムの内容
+		{"type": "pic", "fn": "../bg/hatsunekan_entrance.jpg", "title": "初音館_玄関", "enabled": "true"},
+		{"type": "pic", "fn": "../bg/hatsunekan_corridor.jpg", "title": "初音館_廊下", "enabled": "false"},
+		{"type": "pic", "fn": "../bg/univ_auditorium.jpg", "title": "大学講堂", "enabled": "true"},
+		{"type": "pic", "fn": "../bg/hatsunekan_minoura_room.jpg", "title": "初音館_蓑浦部屋", "enabled": "true"},
+		{"type": "pic", "fn": "../bg/gas_lamp.jpg", "title": "ガス灯", "enabled": "true"},
+		{"type": "mov", "fn": "nc10889", "title": "桜", "enabled": "true"},
+		{"type": "bgm", "fn": "free10", "title": "free10(BGM)", "enabled": "true"},
+		{"type": "bgm", "fn": "free04", "title": "free04(BGM)", "enabled": "true"},
+		{"type": "bgm", "fn": "free25", "title": "free25(BGM)", "enabled": "true"},
+		{"type": "bgm", "fn": "free57", "title": "free57(BGM)", "enabled": "true"},
+	];
+	if (location.protocol == 'file:') document.addEventListener('DOMContentLoaded', init, false);	// ローカルデバッグ用
+
+	var val_dic = null;
+	function init() {
+		if (val_dic) a = JSON.parse(val_dic);
+
+		const lst = document.getElementsByClassName('row')[0];
+		lst.textContent = '';
+		a.map(v=> {
+			if (v.enabled == 'false') {
+				lst.insertAdjacentHTML('beforeend', `
+<div class="col s6 m4 l3 hoverable sld2dsp grey lighten-2">
+	<div class="card"><div class="card-image"><img data-src="_album_miken.jpg"/></div>
+	<span class="card-title">？？？</span>
+	</div>
+</div>`);
+				return;
+			}
+
+			let elm = '';
+			switch (v.type) {
+				case 'bgm':	elm = `
+	<div class="card">
+	<div class="card-image waves-effect waves-block waves-light">
+		<img data-src="thbgm.jpg" class="bgm" data-arg="${v.fn}"/>
+	</div>`;
+					break;
+
+				case 'mov':	elm = `
+	<div class="card">
+	<div class="card-image waves-effect waves-block waves-light">
+		<img data-src="${v.fn}_th.jpg" class="mov" data-arg="${v.fn}"/>
+	</div>`;
+					break;
+
+				default:	elm = `
+	<div class="card">
+	<div class="card-image"><img data-src="${v.fn}" class="materialboxed"/></div>`;
+			}
+			lst.insertAdjacentHTML('beforeend', `
+<div class="col s6 m4 l3 hoverable sld2dsp grey lighten-2">${elm}
+	<span class="card-title">${v.title}</span>
+	</div>
+</div>`);
+		});
+		M.Materialbox.init(document.querySelectorAll('.materialboxed'));
+
+		sn_repRes(setImg);
+	}
+
+	let setImg = undefined;
+	function sn_repRes($setImg) {
+		setImg = $setImg ?? (i=> i.src = i.dataset.src);
+		const elms = document.getElementsByTagName('img');
+		for (let i=0, max=elms.length; i<max; ++i) setImg(elms[i]);
+	}
+
+	function val2ctrl() {	// 変数→コンポーネント
+		document.getElementById('fnBgm').textContent = val_fnBgm;
+	}
+
+</script>
+</head>
+<body class="blue-grey lighten-4" oncontextmenu="return false;">
+	<div class="navbar-fixed"><nav class="blue-grey darken-1" role="navigation">
+		<div class="nav-wrapper container">
+			<span class="brand-logo center">アルバム画面</span>
+			<a class="waves-effect waves-light btn grey" id="close">x</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li>now_playing : <span id="fnBgm"></span></li>
+			</ul>
+			</div>
+	</nav></div>
+
+	<div class="row"></div>
+</body></html>
