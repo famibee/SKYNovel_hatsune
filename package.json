@@ -8,11 +8,7 @@
 	"author": "ugainovel",
 	"license": "MIT",
 	"dependencies": {
-<<<<<<< HEAD
 		"@famibee/skynovel": "^1.0.0",
-=======
-		"@famibee/skynovel": "^0.22.0",
->>>>>>> db26db827927c8e7b999e69a922ff1a06edbc0d5
 		"about-window": "^1.13.4",
 		"crypto-js": "^4.0.0",
 		"humane-js": "^3.2.2"
