@@ -15,7 +15,7 @@
 
 [江戸川乱歩](https://www.aozora.gr.jp/index_pages/person1779.html)「孤島の鬼」二次創作ノベルゲームサンプルです。
 
-![桜の樹の下には](build/readme/manual_th.jpg)
+![桜の樹の下には](build/example/manual_th.jpg)
 
 ## usage（使用法）
 
@@ -27,7 +27,7 @@
 ### 普段の開発（ブラウザ版、アプリ版を作りたい人も手軽なので推奨）
 1. 「Activity Bar」SKYNovelを選択します。
 2. 「ブラウザ版を起動」右の【再生ボタン】をクリック。
-![](build/readme/task_web.png)
+![](build/example/task_web.png)
 3. 自動でブラウザを開き、ブラウザ版が起動します。
 
 ### 普段の開発（アプリ版）
