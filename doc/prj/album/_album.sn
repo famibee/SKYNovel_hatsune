@@ -3,6 +3,7 @@
 
 	[add_frame id=album src=_album visible=false]
 	[event key='dom=album:#close' label=*exit global=true]
+
 	[add_lay layer=album class=grp]
 
 
@@ -18,11 +19,11 @@
 	; 「enabled: 'true'」指定すると最初から閲覧できる
 [let_ml name=dic]
 	[
-		{"type": "pic", "fn": "../bg/hatsunekan_entrance.jpg", "title": "初音館_玄関", "enabled": "#{!!sys:album.hatsunekan_entrance}"},
-		{"type": "pic", "fn": "../bg/hatsunekan_corridor.jpg", "title": "初音館_廊下", "enabled": "#{!!sys:album.hatsunekan_corridor}"},
-		{"type": "pic", "fn": "../bg/univ_auditorium.jpg", "title": "大学講堂", "enabled": "#{!!sys:album.univ_auditorium}"},
-		{"type": "pic", "fn": "../bg/hatsunekan_minoura_room.jpg", "title": "初音館_蓑浦部屋", "enabled": "#{!!sys:album.hatsunekan_minoura_room}"},
-		{"type": "pic", "fn": "../bg/gas_lamp.jpg", "title": "ガス灯", "enabled": "#{!!sys:album.gas_lamp}"},
+		{"type": "pic", "fn": "hatsunekan_entrance", "title": "初音館_玄関", "enabled": "#{!!sys:album.hatsunekan_entrance}"},
+		{"type": "pic", "fn": "hatsunekan_corridor", "title": "初音館_廊下", "enabled": "#{!!sys:album.hatsunekan_corridor}"},
+		{"type": "pic", "fn": "univ_auditorium", "title": "大学講堂", "enabled": "#{!!sys:album.univ_auditorium}"},
+		{"type": "pic", "fn": "hatsunekan_minoura_room", "title": "初音館_蓑浦部屋", "enabled": "#{!!sys:album.hatsunekan_minoura_room}"},
+		{"type": "pic", "fn": "gas_lamp", "title": "ガス灯", "enabled": "#{!!sys:album.gas_lamp}"},
 		{"type": "mov", "fn": "nc10889", "title": "桜", "enabled": "true"},
 		{"type": "bgm", "fn": "free10", "title": "free10(BGM)", "enabled": "true"},
 		{"type": "bgm", "fn": "free04", "title": "free04(BGM)", "enabled": "#{!!sys:album.free04}"},
@@ -54,27 +55,45 @@
 	[tsy_frame id=album time=500 y=0]
 	[wait_tsy id=album]
 
+	[set_focus add='dom=album:.hover-overlay']
+	[event key='dom=album:.pic' label=*pic call=true need_err=false]
 	[event key='dom=album:.bgm' label=*bgm call=true need_err=false]
 	[event key='dom=album:.mov' label=*mov call=true need_err=false]
 	[event key=rightclick label=*exit]
-	[event key=command label=*exit]
+	[event key=meta label=*exit]
 	[event key=control label=*exit]
-	[event key=end label=*exit]
+	[event key=delete label=*exit]
+	[event key=backspace label=*exit]
 	[event key=shift label=*exit]
+	[event key=end label=*exit]
 ;	[gesture_event f2tap=*exit f3tap=*exit]
 	[set_focus to=null]
 [s]
 
-; BGM切り替え
-*bgm
+*pic	; 画像ビュアー
+	[lay layer=album fn=&sn.event.domdata.arg visible=true float=true left=0 top=0]
+	[frame id=album visible=false]
+	[event key=rightclick label=**after]
+	[event key=meta label=**after]
+	[event key=control label=**after]
+	[event key=delete label=**after]
+	[event key=backspace label=**after]
+	[event key=shift label=**after]
+	[event key=end label=**after]
+	[waitclick]		; 右クリックイベントを一時無効化したい
+**
+	[frame id=album visible=true]
+	[lay layer=album visible=false]
+[return]
+
+*bgm	; BGM切り替え
 	[frame id=album disabled=true]
 	[playbgm fn=&sn.event.domdata.arg]
 	[call label=*upd_bgmdsp]
 	[frame id=album disabled=false]
 [return]
 
-; 動画再生
-*mov
+*mov	; 動画再生
 	[frame id=album disabled=true]
 		&vol = sys:const.sn.sound.BGM.volume
 		&fn = save:const.sn.sound.BGM.fn
