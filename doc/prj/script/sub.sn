@@ -178,8 +178,8 @@
 	; こちらの素材をお借りしました。
 	; びたちー素材館　メッセージボックス・メッセージウィンドウ・フレーム　フリー素材 http://www.vita-chi.net/message.htm
 	[lay * layer=%layer|'mes' page=%page|back visible=%visible|true left=&l top=0
-		b_pic=%b_pic|wafuu1	; 背後に画像を使う（width・heightは画像に合わされる）
-	;	b_color=%b_color|'#ffffff'	; 背後に画像を使わない・単色塗り
+	;	b_pic=%b_pic|wafuu1	; 背後に画像を使う（width・heightは画像に合わされる）
+		b_color=%b_color|'#ffffff'	; 背後に画像を使わない・単色塗り
 		; その際はstyleにサイズ指定必須 width: #{w}px; height: #{const.sn.config.window.height}px;
 		b_alpha=%b_alpha|1
 	;	b_alpha_isfixed=true	; コメント外すと透過度変更禁止
@@ -255,7 +255,7 @@
 
 ;********************************************************
 ; マクロ テキストレイヤ横書きWide下設定
-[macro name=txt_lay_h_bottom_wide]	;#NO_WARM_UNUSED_MACRO	txt_lay_h_bottom_wide
+[macro name=txt_lay_h_bottom_wide nowarn_unused=true]
 	[txt_lay_fullscreen * t=%t|472 h=266 max_row=6]
 [endmacro]
 
