@@ -1,4 +1,3 @@
-;#USE-FONT	ipam
 [sys_scenario_start]
 	; *** テキストレイヤ横書きWide下設定 ***
 	[txt_lay_h_bottom_wide]
