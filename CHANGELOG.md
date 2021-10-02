@@ -1,5 +1,9 @@
 # Change Log
 
+## v2.6.2
+- fix: doc/prj/other/title.jpg を doc/prj/bg/title.jpg に移動
+- fix: doc/prj/other フォルダを theme に変名
+- fix: doc/prj/theme/_yesno.sn 、二度以上コールされた際に[return]するように
 ## v2.6.1
 - fix: windowsで正しいURLを開けないのを修正
 	- package.json/scripts の watch:wds, watch:wdsdbg の「'」を削除
