@@ -1,9 +1,13 @@
 # Change Log
 
+## v2.7.1
+- fix: パッケージ版ビルドエラー修正
+	- script 内 "webpack:pro"の【-p】を【--mode production】に置換
+	- "build": {} 直下に
+"artifactName": "${productName}-${version}-${arch}.${ext}",
+		- File Patterns - electron-builder https://www.electron.build/file-patterns#file-macros
 ## v2.7.0
 - add: ページ移動機能追加：page up/downキーで、既読ページを前後移動できるように
-- memo: 既知の問題：
-	- fix: [fg2]、一人追加時に画面三等分配置にならない
 ## v2.6.2
 - fix: doc/prj/other/title.jpg を doc/prj/bg/title.jpg に移動
 - fix: doc/prj/other フォルダを theme に変名
