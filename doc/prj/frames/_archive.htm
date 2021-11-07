@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="lib/mdb.min.css">
 <style type="text/css">
 	html {user-select: none; -webkit-user-select: none;}	/* 選択禁止 */
-	body {padding-top: 70px;}
+	body {padding-top: 70px; min-height: 100vh;}
 	.row {--bs-gutter-x: 0.3rem;}	 /* mdbを微調整 */
 	.btn:hover, .btn:focus {
 		border: solid black;
@@ -258,8 +258,8 @@
 		<span class="navbar-brand"><span class="mode">ロード</span>画面</span>
 	</div>
 
-	<div class="collapse navbar-collapse ml-auto">
-		<button id="tgl_del" type="button" class="btn btn-outline-light btn-rounded ml-auto" aria-label="編集する" data-toggle="tooltip" title="編集する">
+	<div class="collapse navbar-collapse justify-content-end">
+		<button id="tgl_del" type="button" class="btn btn-outline-light btn-rounded" aria-label="編集する" data-toggle="tooltip" title="編集する">
 			<svg width="1.9em" height="1.9em" viewbox="0 0 16 16" class="bi bi-trash-fill" style="pointer-events: none;" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 				<path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
 			</svg>

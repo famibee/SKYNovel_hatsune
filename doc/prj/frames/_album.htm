@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="lib/mdb.min.css">
 <style type="text/css">
 	html {user-select: none; -webkit-user-select: none;}	/* 選択禁止 */
-	body {padding-top: 70px;}
+	body {padding-top: 70px; min-height: 100vh;}
 	.row {--bs-gutter-x: 0.3rem;}	 /* mdbを微調整 */
 	.btn:hover, .btn:focus {
 		border: solid black;
@@ -130,7 +130,7 @@
 <nav class="navbar fixed-top navbar-expand navbar-dark bg-dark">
 <div class="container-fluid">
 
-	<div class="collapse navbar-collapse mr-auto">
+	<div class="collapse navbar-collapse">
 		<button id="close" type="button" class="btn btn-outline-light py-0" aria-label="閉じる" data-toggle="tooltip" title="閉じる">
 			<span style="font-size: 2em; pointer-events: none;" aria-hidden="true">&times;</span>
 		</button>
@@ -140,8 +140,8 @@
 		<span class="navbar-brand">アルバム画面</span>
 	</div>
 
-	<div class="collapse navbar-collapse ml-auto">
-		<span class="navbar-text text-white ml-auto">
+	<div class="collapse navbar-collapse justify-content-end">
+		<span class="navbar-text text-white">
 			now_playing : <span id="fnBgm"></span>
 		</span>
 	</div>
