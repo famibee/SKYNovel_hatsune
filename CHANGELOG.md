@@ -1,5 +1,7 @@
 # Change Log
 
+## v2.9.4
+- fix: doc/prj/theme/ext_fg2.sn 更新
 ## v2.9.3
 - fix: build/include/readme.txt：保存先ミスを修正（デスクトップ→ダウンロードフォルダ）
 - fix: doc/app.js：SKYNovel.initRenderer()引数変更：SKYNovel v1.25.8 以降必須対応
