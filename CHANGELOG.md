@@ -1,5 +1,8 @@
 # Change Log
 
+## v2.9.6
+- fix: ブラウザ版で全画面時にセンタリングするように
+	- doc/web.htm 変更（cssで「canvas」→「canvas#skynovel」）
 ## v2.9.4
 - fix: doc/prj/theme/ext_fg2.sn 更新
 ## v2.9.3
