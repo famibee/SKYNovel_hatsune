@@ -49,12 +49,9 @@
 
 	; 最新値で更新
 	[call label=*val2ctrl]
-	; 下部からスライドイン
-	[frame id=album visible=true y=&const.sn.frm.album.height]
-	[tsy_frame id=album time=500 y=0]
-	[wait_tsy id=album]
+	[frame id=album visible=true]
 
-	[set_focus add='dom=album:.hover-overlay']
+	[set_focus add='dom=album:.hover-overlay' need_err=false]
 	[event key='dom=album:.pic' label=*pic call=true need_err=false]
 	[event key='dom=album:.bgm' label=*bgm call=true need_err=false]
 	[event key='dom=album:.mov' label=*mov call=true need_err=false]
@@ -115,8 +112,6 @@
 *exit
 	[se fn=&sysse_cancel buf=SYS]
 
-	[tsy_frame id=album time=500 y=&const.sn.frm.album.height]
-	[wait_tsy id=album]
 	[frame id=album visible=false]
 
 	[enable_event enabled=true]

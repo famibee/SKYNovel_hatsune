@@ -3,9 +3,6 @@
 ![](https://img.shields.io/badge/platform-windows%20%7C%20macos-lightgrey.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/famibee/SKYNovel_hatsune)
 
-[![dependencies](https://david-dm.org/famibee/SKYNovel_hatsune/status.svg)](https://david-dm.org/famibee/SKYNovel_hatsune)
-[![dependencies](https://david-dm.org/famibee/SKYNovel_hatsune/dev-status.svg)](https://david-dm.org/famibee/SKYNovel_hatsune?type=dev)
-
 ![logo.svg](https://github.com/famibee/SKYNovel/blob/master/test/icon.svg)
 
 [CHANGELOG.md](CHANGELOG.md)
