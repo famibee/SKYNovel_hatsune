@@ -36,7 +36,9 @@
 
 ;********************************************************
 ; 立ち絵の扱いが簡単な[fg]
-[macro name=fg2 nowarn_unused=true]
+[macro name=fg2 nowarn_unused=true nowarn_unused=true
+	sum='レイヤ画像を変更・立ち絵の扱いが簡単な[fg]'
+]
 	[fg2_ini_save_const]
 
 	; ここまでで[clear_lay]などされてるレイヤ情報を削除
@@ -109,7 +111,7 @@
 [endmacro]
 
 ;****************************
-[macro name=fg2_attention nowarn_unused=true]
+[macro name=fg2_attention]
 	[let_length name=cnt text=&save:sn.fg2.lays@str]
 	[for_call name=l from=0 to=&cnt-1 label=*fg2_attention]
 [endmacro]
@@ -123,7 +125,7 @@
 
 ;********************************************************
 ; 立ち絵を屈伸させる
-[macro name=fg2_squat nowarn_unused=true]
+[macro name=fg2_squat nowarn_unused=true sum='立ち絵を屈伸させる']
 	[fg2_ini_save_const]
 
 	[let_replace name=h text=%name val='' reg='_.+' cast=str]
@@ -133,7 +135,7 @@
 
 ;********************************************************
 ; 立ち絵を震わせる
-[macro name=fg2_shake nowarn_unused=true]
+[macro name=fg2_shake nowarn_unused=true sum='立ち絵を震わせる']
 	[fg2_ini_save_const]
 
 	[let_replace name=h text=%name val='' reg='_.+' cast=str]
@@ -143,7 +145,7 @@
 
 ;********************************************************
 ; 立ち絵を反復横跳びさせる（楽しそう）
-[macro name=fg2_sidestep nowarn_unused=true]
+[macro name=fg2_sidestep nowarn_unused=true sum='レイヤを反復横跳びさせる']
 	[fg2_ini_save_const]
 
 	[let_replace name=h text=%name val='' reg='_.+' cast=str]
