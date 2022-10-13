@@ -191,8 +191,8 @@
 「そう。科學者を目指すからこその指摘だ」[plc]
 
 
-	[grp bg=black time=1500 nofi_txt=true]
-	[grp bg=gas_lamp time=2000 nofo_txt=true]
+	[grp bg=black time=1500 fi_txt=false]
+	[grp bg=gas_lamp time=2000 fo_txt=false]
 
 　町並みはここ數年で｜瓦斯《ガ ス》灯が消え去り、タングステン電球の街灯が夜道を照らしている。[lr]
 　なのに道路は舖裝が追いつかず、土が露出した地面を下駄で歩けばカラコロジャラリと音がする。[plc]
@@ -217,11 +217,11 @@
 	; *** テキストレイヤ横書きWide下設定 ***
 	[txt_lay_h_bottom_wide]
 	; *** BG ***
-	[grp bg=black rule=r_ulspl_noise nofi_txt=true]
+	[grp bg=black rule=r_ulspl_noise fi_txt=false]
 	[wait time=2000]
-	[grp bg=dressing_room rule=r_rub_clockwise nofo_txt=true nofi_txt=true]
+	[grp bg=dressing_room rule=r_rub_clockwise fo_txt=false fi_txt=false]
 	[wait time=2000]
-	[grp bg=public_bath se=mizu07 nofo_txt=true rule=r_blind_c2side]
+	[grp bg=public_bath se=mizu07 fo_txt=false rule=r_blind_c2side]
 
 「諸戸さんの背中は広いですね」[plc]
 
@@ -293,13 +293,13 @@
 
 
 	; *** BG ***
-	[grp bg=bath_tub se=mizu07 nofi_txt=true]
+	[grp bg=bath_tub se=mizu07 fi_txt=false]
 	[wait time=2000]
-	[grp bg=black rule=r_ulspl_noise nofo_txt=true nofi_txt=true]
+	[grp bg=black rule=r_ulspl_noise fo_txt=false fi_txt=false]
 	; *** BGM ***
 	[fadeoutbgm time=2000]
 	[wait time=2000]
-	[grp bg=restaurant rule=r_rub_clockwise nofo_txt=true]
+	[grp bg=restaurant rule=r_rub_clockwise fo_txt=false]
 
 〝肉体的な事ばかりではなく、彼は私に親切の限りを尽くしてくれたのだった。[lr]
 　彼は私にいろいろ贈り物をした。芝居や映画や運動競技などにも連れて行ってくれた。[lr]
@@ -511,11 +511,11 @@
 	; *** テキストレイヤ横書きWide下設定 ***
 	[txt_lay_h_bottom_wide b_alpha=0.8]
 	; *** BG ***
-	[grp bg=black rule=r_ulspl_noise nofi_txt=true]
+	[grp bg=black rule=r_ulspl_noise fi_txt=false]
 	[wait time=2000]
 	; *** BGM ***
 	[bgm fn=free34 time=2000]
-	[grp bg=gravel_road l0=hatsunekan_appearance left0=500 top0=30 rule=r_rub_clockwise nofo_txt=true]
+	[grp bg=gravel_road l0=hatsunekan_appearance left0=500 top0=30 rule=r_rub_clockwise fo_txt=false]
 
 　諸戸さんは私を初音館の表に連れ出した。[plc]
 
@@ -552,7 +552,7 @@
 　子供がどうすれば安心するのかをよく知っているかのようだ。[plc]
 
 
-	[grp bg=gravel_road l0=black o0=0.8 l1=moro_nor pos1=&pos.l2l l2=mino_body_wa f2=mino_kuchi_nor,mino_me_hanbiraki,mino_mayu_nor pos2=&pos.l2r nofi_txt=true nofo_txt=true]
+	[grp bg=gravel_road l0=black o0=0.8 l1=moro_nor pos1=&pos.l2l l2=mino_body_wa f2=mino_kuchi_nor,mino_me_hanbiraki,mino_mayu_nor pos2=&pos.l2r fi_txt=false fo_txt=false]
 　──「子供の頃はあまりいい思い出がない」のに？[plc]
 
 　いや、｜だからか《*》。｜どうされたくないか《*》を身に染みて知っているからこそ、厭がる事を避けられるのかも知れない。[plc]
@@ -562,7 +562,7 @@
 　──彼の過去には何があったのだろう？[plc]
 
 
-	[grp bg=gravel_road l0=moro_nor pos0=&pos.l2l o0=1 l1=mino_body_wa f1=mino_kuchi_nor,mino_me_hanbiraki,mino_mayu_nor pos1=&pos.l2r l2=children pos2=&pos.l3c nofi_txt=true nofo_txt=true]
+	[grp bg=gravel_road l0=moro_nor pos0=&pos.l2l o0=1 l1=mino_body_wa f1=mino_kuchi_nor,mino_me_hanbiraki,mino_mayu_nor pos1=&pos.l2r l2=children pos2=&pos.l3c fi_txt=false fo_txt=false]
 「さあ、お菓子をあげるからこないだの話をこの蓑浦君にも聞かせてくれたまえ」[plc]
 
 　そう云って諸戸さんは浴衣《ゆかた》の懐《ふところ》から紙箱を取り出す。[plc]
@@ -632,11 +632,11 @@
 「初音館の周辺は舖裝されておらず、僕らのように下駄で歩けばカラコロジャラリと音がする。しかし、初音館には｜下駄の足音がしない住人《*》が居るだろう？」[plc]
 
 	; *** BG ***
-	[grp bg=black rule=r_ulspl_noise nofi_txt=true]
+	[grp bg=black rule=r_ulspl_noise fi_txt=false]
 	; *** BGM ***
 	[bgm fn=free54 time=2000]
 	[wait time=2000]
-	[grp bg=hatsunekan_crime_scene l2=takanashi pos2=&pos.l3c rule=r_rub_clockwise nofo_txt=true]
+	[grp bg=hatsunekan_crime_scene l2=takanashi pos2=&pos.l3c rule=r_rub_clockwise fo_txt=false]
 「そんなことで己《おれ》にたどり着いたというわけか」[plc]
 
 　小鳥遊が呆《あき》れてグッタリとうなだれる。[plc]
@@ -816,13 +816,13 @@
 
 
 	; *** BG ***
-	[grp bg=white rule=r_ulspl_noise nofi_txt=true]
+	[grp bg=white rule=r_ulspl_noise fi_txt=false]
 	[wait time=2000]
 
 	; *** BGM ***
 	[bgm fn=free04 time=2000]
 
-	[grp bg=stroll rule=r_rub_clockwise nofo_txt=true]
+	[grp bg=stroll rule=r_rub_clockwise fo_txt=false]
 
 　諸戸さんの探偵により事件は解決した。[lr]
 　ようやく初音館に平穏が戻ったのだ。[plc]
@@ -847,7 +847,7 @@
 
 
 	; *** BG ***
-	[grp bg=black time=2000 sys_menu=false nofi_txt=true]
+	[grp bg=black time=2000 sys_menu=false fi_txt=false]
 
 	[wait time=1000]
 
