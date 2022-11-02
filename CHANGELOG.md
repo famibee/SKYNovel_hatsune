@@ -1,5 +1,8 @@
 # Change Log
 
+## v2.12.11
+- fix: [fg][fg2]に snippet_ext=SP_GSM 追加
+- fix: [bgm][se]に snippet_ext=SOUND 追加
 ## v2.12.10
 - fix: [fg][fg2]説明修正
 ## v2.12.9
