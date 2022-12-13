@@ -1,4 +1,9 @@
 {
+	"save_ns": "hatsune",
+	"window": {
+		"width": 1024,
+		"height": 768
+	},
 	"book": {
 		"title": "初音館にて",
 		"creator": "ふぁみべぇ",
@@ -8,19 +13,14 @@
 		"detail": "江戸川乱歩「孤島の鬼」二次創作ノベルゲームサンプルです。",
 		"version": "1.0.0"
 	},
-	"save_ns": "hatsune",
-	"window": {
-		"width": 1024,
-		"height": 768
-	},
 	"log": {
 		"max_len": 1024
 	},
 	"init": {
+		"bg_color": "#000000",
 		"tagch_msecwait": 10,
 		"auto_msecpagewait": 3500,
-		"escape": "",
-		"bg_color": "#000000"
+		"escape": ""
 	},
 	"debug": {
 		"devtool": false,
