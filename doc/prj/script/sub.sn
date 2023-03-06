@@ -59,7 +59,7 @@
 	[fadeoutse buf=SE time=500]
 
 	; テキストレイヤ全画面設定
-	[txt_lay_fullscreen b_alpha=0 no_sysmenu_draw=true]
+	[txt_lay_fullscreen b_alpha=0 visible=true no_sysmenu_draw=true]
 	[lay layer=mes page=back style="&'font-family: #{def_fonts};'"]
 	[grp bg=black sys_menu=false b_alpha=0 time=0]
 
