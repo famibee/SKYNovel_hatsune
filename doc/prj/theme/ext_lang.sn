@@ -4,11 +4,12 @@
 ;*********************************************************
 [let name=lang_co text=&const.sn.navigator.language val2font=true]
 [let_substr name=lang text=&lang_co pos=0 len=2]
-[let name=save:sn.userFnTail text=&lang val2fontNm='SourceHanSansCN-Normal']
 
 [if exp='lang == "en"']	; 英語
-	[title text='The Key to Home' cond=!const.体験版]
-	[title text='The Key to Home (Trial)' cond=const.体験版]
+	[let name=save:sn.userFnTail text=&lang val2fontNm='ipamjm']
+
+;	[title text='At Hatsunekan' cond=!const.体験版]
+;	[title text='At Hatsunekan (Trial)' cond=const.体験版]
 
 	; text button
 	&btn.Start = 'New game'
@@ -80,10 +81,10 @@
 ;*****************************
 [elsif exp='lang_co == "zh-TW"']	; 繁体字中国語（台湾・香港）
 	&lang = 'ct'
-	&save:sn.userFnTail = lang
+	[let name=save:sn.userFnTail text=&lang val2fontNm='Source Han Sans CN']
 
-	[title text='家的鑰匙' cond=!const.体験版]
-	[title text='家的鑰匙 (Trial)' cond=const.体験版]
+;	[title text='在初根館' cond=!const.体験版]
+;	[title text='在初根館 (試用版)' cond=const.体験版]
 
 	; text button
 	&btn.Start = '從頭開始'
@@ -156,10 +157,10 @@
 ;[elsif exp='lang_co == "zh-CN"']	; 簡体字中国語（いわゆる中国）
 [elsif exp='lang == "zh"']	; 簡体字中国語（いわゆる中国）
 	&lang = 'cn'
-	&save:sn.userFnTail = lang
+	[let name=save:sn.userFnTail text=&lang val2fontNm='Source Han Sans CN']
 
-	[title text='家的鑰匙' cond=!const.体験版]
-	[title text='家的鑰匙 (Trial)' cond=const.体験版]
+;	[title text='在初根馆' cond=!const.体験版]
+;	[title text='在初根馆 (试用版)' cond=const.体験版]
 
 	; text button
 	&btn.Start = '从最初开始'
@@ -178,14 +179,14 @@
 	&mes.スクリーンショットをダウンロードしました = '我下载了截图'
 
 	; sysmenu
-	&btn.クイックセーブ = '快速紀錄'
-	&btn.クイックロード = '快速讀取'
-	&btn.タイトルへ = '回到標題'
+	&btn.クイックセーブ = '快速紀錄 '
+	&btn.クイックロード = '快速讀取 '
+	&btn.タイトルへ = '回到標題 '
 	&btn.セーブ = ' 紀 錄 '
 	&btn.ロード = ' 讀 取 '
-	&btn.字を隠す = '隱藏字框'
-	&btn.履歴を表示 = '文字履歷'
-	&btn.ゲーム設定 = '遊戲設定'
+	&btn.字を隠す = '隱藏字框 '
+	&btn.履歴を表示 = '文字履歷 '
+	&btn.ゲーム設定 = '遊戲設定 '
 
 	; _submenu.sn
 	&mes.ゲームに戻る = '回到遊戲中'
@@ -230,8 +231,10 @@
 
 ;*****************************
 [elsif exp='lang == "es"']	; スペイン語
-	[title text='The Key to Home' cond=!const.体験版]
-	[title text='The Key to Home (Trial)' cond=const.体験版]
+	[let name=save:sn.userFnTail text=&lang val2fontNm='ipamjm']
+
+;	[title text='En Hatsunekan' cond=!const.体験版]
+;	[title text='En Hatsunekan (versión de prueba)' cond=const.体験版]
 
 	; text button
 	&btn.Start = 'Empezar'
@@ -250,14 +253,14 @@
 	&mes.スクリーンショットをダウンロードしました = 'descargué la captura de pantalla'
 
 	; sysmenu
-	&btn.クイックセーブ = 'Guardado rápido'
-	&btn.クイックロード = 'Carga rápida'
-	&btn.タイトルへ = 'al título'
-	&btn.セーブ = 'Guardar'
-	&btn.ロード = 'Cargar'
-	&btn.字を隠す = 'texto oculto'
-	&btn.履歴を表示 = 'historia'
-	&btn.ゲーム設定 = 'Opciones'
+	&btn.クイックセーブ = 'Guardado rápido '
+	&btn.クイックロード = 'Carga rápida '
+	&btn.タイトルへ = 'al título '
+	&btn.セーブ = ' Guardar '
+	&btn.ロード = ' Cargar '
+	&btn.字を隠す = 'texto oculto '
+	&btn.履歴を表示 = 'historia '
+	&btn.ゲーム設定 = 'Opciones '
 
 	; _submenu.sn
 	&mes.ゲームに戻る = 'Volver al juego'
@@ -303,9 +306,10 @@
 ;*****************************
 [else]	; 日本語
 	[let name=lang text='ja' val2fontNm='ipamjm']
+	&save:sn.userFnTail = ''
 
-	[title text='いえのかぎ' cond=!const.体験版]
-	[title text='いえのかぎ（体験版）' cond=const.体験版]
+;	[title text='初音館にて' cond=!const.体験版]
+;	[title text='初音館にて（体験版）' cond=const.体験版]
 
 	; text button
 	&btn.Start = '最初から'

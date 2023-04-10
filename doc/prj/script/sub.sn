@@ -252,9 +252,7 @@
 	%r_style?='CSS style|何もしない|ルビの CSS Style を指定する。\n「color: red;」「color: blue;」と個別指定時は、過去値を上書きする。\n空白文字を指定時は全てクリアする'
 	%r_align?='left、center、right、justify、121、even、1ruby|現在値|ルビ揃えを指定する'
 ]
-	[txt_lay_v_center * l=%l|294 w=436 max_row=11 pr=26
-	b_pic=wafuu1w	; 背後に画像を使わない場合はコメントアウト
-]
+	[txt_lay_v_center * l=%l|294 w=436 max_row=11 pr=26]
 [endmacro]
 
 
