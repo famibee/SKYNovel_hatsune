@@ -41,4 +41,9 @@
 &autoResume = true	; （開発用ブラウザ版で）自動レジュームするか
 [let name=autoResume text=false cond=!const.sn.isDebugger]
 
+&const.体験版 = false	; 体験版か
+;[title text=&const.sn.config.book.title]
+;[title text=#&const.sn.config.book.title +' 体験版'# cond=const.体験版]
+	; インストーラーにも表示したいので、一時的にアプリ名ごと変える方向で
+
 [return]
