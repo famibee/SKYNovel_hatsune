@@ -4,7 +4,7 @@
 ;*********************************************************
 [let name=lang_co text=&const.sn.navigator.language val2font=true]
 [let_substr name=lang text=&lang_co pos=0 len=2]
-[let name=save:sn.userFnTail text=&lang val2fontNm='SourceHanSansCN_Normal']
+[let name=save:sn.userFnTail text=&lang val2fontNm='SourceHanSansCN-Normal']
 
 [if exp='lang == "en"']	; 英語
 	[title text='The Key to Home' cond=!const.体験版]
