@@ -35,7 +35,7 @@
 
 &tategaki = true	; (HIDE GUI) 本文は縦書きか
 
-&def_fonts = 'ipamjm, QuiMi_mincho'	; デフォルトフォント
+&def_fonts = 'ipamjm, "QuiMi-mincho", "Source Han Sans CN"'	; デフォルトフォント
 ;&sn.button.fontFamily = 'ipamjm'
 
 &autoResume = true	; （開発用ブラウザ版で）自動レジュームするか

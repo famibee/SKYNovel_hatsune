@@ -27,7 +27,7 @@
 	[アルバム解放 name=free04]
 
 [r]
-	[span style='font-family: QuiMi_mincho;']
+	[span style='font-family: "QuiMi-mincho";']
 　大正十一年（一九二二年）四月｜朔日《ついたち》[r]
 　　──神田、｜初音館《はつ ね かん》
 	[span style='font-family: ipamjm;']
@@ -426,7 +426,7 @@
 	[trans layer=mes,2 time=1000 rule=r_uzumaki]
 	[wt]
 
-	[span style='font-family: QuiMi_mincho;']
+	[span style='font-family: "QuiMi-mincho";']
 鳥山石燕《とり やま せき えん》　｜『今昔百鬼拾遺《　こ んじ ゃく ひゃ っき しゅ うい》』中之巻　霧[lr]
 
 	[se fn=PageD_16]
@@ -651,7 +651,7 @@
 
 	[fg fn=moro_nor pos=&pos.l2l]
 ｜「
-	[span style='font-family: QuiMi_mincho;']
+	[span style='font-family: "QuiMi-mincho";']
 ｜【朝雲暮雨《　ち ょう うん ぼ う》】【｜巫山《ふ ざん》の雲雨《うん う》】【雲雨の交わり】
 	[span style='font-family: ipamjm;']
 とは忍んで行なう男女の契《ちぎ》りを云う。｜楚《そ》の懐王《かいおう》が夢の中で｜四川《し せん》・｜湖北《こ ほく》両省の境にある巫山の神女と親しくなった故事から來た言葉だ」[plc]
@@ -678,7 +678,7 @@
 「手のひらを嘗めていますね……？　これは？」[plc]
 
 「全て辞書に載っているよ、蓑浦君。
-	[span style='font-family: QuiMi_mincho;']
+	[span style='font-family: "QuiMi-mincho";']
 【手を舐《ねぶ》る】
 	[span style='font-family: ipamjm;']
 とは、手に唾《つば》をつけて氣負い込む事を云うのさ。宇治拾遺物語《うじしゅういものがたり》に『われをとく得むと、手をねぶりつる軍《いくさ》どもうせにけり』とね」[plc]
@@ -689,7 +689,7 @@
 
 
 「また
-	[span style='font-family: QuiMi_mincho;']
+	[span style='font-family: "QuiMi-mincho";']
 【手を食う】
 	[span style='font-family: ipamjm;']
 という言葉がある。その手は桑名の焼き蛤《はまぐり》、と云うだろう？　あの逆さ。まんまと計略にはまる事を云う」[plc]
@@ -697,7 +697,7 @@
 　──つい騙されてしまう女。[plc]
 
 「
-	[span style='font-family: QuiMi_mincho;']
+	[span style='font-family: "QuiMi-mincho";']
 【手が空《あ》けば口が開《あ》く】
 	[span style='font-family: ipamjm;']
 とは、『仕事がなければ食べていけない』という意味の他に、『暇になるとむだなお喋《しゃべ》りが多くなる』という意味もある」[plc]
@@ -741,7 +741,7 @@
 	[se fn=PageD_16]
 	[fg fn=toho layer=2 left=360 top=0 rule=r_l2r]
 
-	[span style='font-family: QuiMi_mincho;']
+	[span style='font-family: "QuiMi-mincho";']
 杜甫《と ほ》　『｜貧交行《ひん こう こう》』[lr]
 [r]
 　　翻手作雲覆手雨[lr]
@@ -749,7 +749,7 @@
 　　君不見管鮑貧時交[lr]
 　　此道今人棄如土[plc]
 
-	[span style='font-family: QuiMi_mincho;']
+	[span style='font-family: "QuiMi-mincho";']
 　手を翻《ひるがえ》せば雲と作《な》り手を覆《くつがえ》せば雨となる。[lr]
 　薄れていく義理や人情は絶え間なく、｜枚挙《まいきょ》に暇《いとま》がない。[lr]
 　勢いがあるときは良いが、落ちぶれるとそれっきり。[lr]
@@ -760,7 +760,7 @@
 「｜詩聖《し せい》杜甫ともあろうものが七字に統一できず三行目が一文字多いが、僕は敢《あ》えて古詩《こ し》形式にしたと睨んでいる。古詩は韻を踏むだけで、｜平仄《ひょうそく》や｜句數《く すう》に制限を課さない、俳句で云えば自由律というやつなんだ。古い形式にする事で、この詩の普遍性を詠《うた》ったのだろうと」[plc]
 
 
-	[span style='font-family: QuiMi_mincho;']
+	[span style='font-family: "QuiMi-mincho";']
 【手を翻せば雲となり、手を覆せば雨となる】[lr]
 	[span style='font-family: ipamjm;']
 　人情が變わりやすく頼みにならないたとえだ。[plc]
@@ -793,7 +793,7 @@
 
 	[grp bg=cobblestone_twilight rule=r_kumo]
 「
-	[span style='font-family: QuiMi_mincho;']
+	[span style='font-family: "QuiMi-mincho";']
 【｜灯籠鬢《とうろうびん》】
 	[span style='font-family: ipamjm;']
 という女の髮の結い方がある。左右の鬢《びん》に鯨鬚《くじらひげ》製の鬢差《びんさし》を入れて張り出させたものだ。中空だから中が透けて見え、灯籠に似ている事から名が附いたのさ。全体像が灯籠の笠に似ているから、という説もある。明和（一七六四～一七七二）・安永（一七七二～一七八一）から享和（一八〇一～一八〇四）年間にかけて遊里で流行したらしい。透鬢《すき びん》という呼び方もある」[plc]
