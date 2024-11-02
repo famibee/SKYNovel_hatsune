@@ -1,5 +1,55 @@
 # Change Log
 
+## v2.18.0
+- feat(_config.sn,htm): ボイス（VOICEバッファの音声）再生中のBGM音量への乗数を設定できるように
+- feat(setting.sn): 同上の初期値設定と、設定画面へのスライダー追加
+- fix(core/webpack.config.js): 【Module not found: Error: Can't resolve 'url'〜】対策
+	- angular14 - Module not found: Error: Can't resolve 'url' in webpack 5/Angular 14 - Stack Overflow https://stackoverflow.com/questions/72720744/module-not-found-error-cant-resolve-url-in-webpack-5-angular-14
+
+
+## v2.17.0
+- fix(_submenu.sn): ページ遷移状態から [page to=load] する際にダイアログで確認するように
+	- fix だが前回あげ忘れにつきマイナーver上げ
+- fix(_submenu.htm, _submenu.sn): 右クリックメニュー表記を最新に
+- fix(_yesno.sn): ダイアログ表示中にショートカットが利かないように
+- fix(_album.sn, _archive.sn, _config.sn, _log.sn, _log.sn, _submenu.sn, _yesno.sn, _hidetext.sn): escape キーでも画面を抜けられるように
+- fix: ライブラリ更新(SKYNovel v1.60.2)など
+## v2.16.3
+- feat(_submenu.sn): ページ遷移状態から抜けるキーショートカット追加
+	- ページ遷移状態でなければ右クリックメニューを表示するキーショートカット（ESC, Shift）
+	- to=load ショートカットとして右クリックや shiftキー を先行で組み込み
+- fix(_log.sn → _submenu.sn): ページ遷移状態へ移行するキーショートカットや処理を移動
+- fix: ライブラリ更新(SKYNovel v1.58.0)など
+## v2.16.2
+- fix(app.js): メニューに【ウインドウサイズを初期に戻す】追加
+- fix: ライブラリ更新(SKYNovel v1.57.0)など
+## v2.16.1
+- fix(main.sn): AIRNovel時代の変数名のまま残っていたミス修正
+	- 旧：const.flash.display.Stage.displayState=='normal'
+	- 新：! const.sn.displayState
+## v2.16.0
+- feat(main.sn): key=Meta+0 で変更したウインドウサイズを初期状態に戻せる
+- fix(app.js): 初期値項目廃止につき記述削除
+## v2.15.2
+- fix(_submenu.htm): ゲーム終了ボタンが効かなかったのを修正
+- fix(_submenu.sn): 「起動：ブラウザ版」上での実行ならゲーム終了ボタンを無視するように
+- fix(Bootstrap): ライブラリ更新 v5.1.3 -> v5.3.3
+## v2.15.1
+- fix(doc/prj/prj.json): debug: {}に【"dumpHtm": false,】追加
+- fix(sub.sn): 変数 pos.vleft_disp_x 設定直後に [fg2]用設定を追加
+	- テンプレで ext_*.sn 後に  sub.sn が呼ばれるのは保証
+- doc(doc/prj/script/sub.sn): 引数説明 txt_time => t_time ミス修正
+## v2.15.0
+- feat: フォントサイズを変数 font_size で指定できるように。デフォルト値 24（px）
+- feat: [設定画面]-[テンプレ]で指定できる変数を追加
+	- tategaki（本文は縦書きか）
+	- bura_mode（ぶら下げ禁則処理するか）
+	- font_size（フォントサイズ）
+- fix: フォントサイズ不統一を修正
+	- [txt_lay_v_left]で 33.6px
+	- [txt_lay_fullscreen]で 24px だった
+## v2.14.20
+- fix: ライブラリ更新(SKYNovel v1.53.12)など
 ## v2.14.19
 - fix([plc][lr]): [wq]を追加。[quake]中に[p][l]待ちで次へ進むのを止める
 	- というか、止めるかどうかをそれぞれのマクロで決められる方針

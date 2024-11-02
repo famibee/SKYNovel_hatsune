@@ -23,7 +23,8 @@
 		"escape": ""
 	},
 	"debug": {
-		"devtool": true,
+		"devtool": false,
+		"dumpHtm": false,
 		"token": false,
 		"tag": false,
 		"putCh": false,

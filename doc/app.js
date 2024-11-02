@@ -1,5 +1,5 @@
 /* ***** BEGIN LICENSE BLOCK *****
-	Copyright (c) 2018-2022 Famibee (famibee.blog38.fc2.com)
+	Copyright (c) 2018-2024 Famibee (famibee.blog38.fc2.com)
 
 	This software is released under the MIT License.
 	http://opensource.org/licenses/mit-license.php
@@ -38,7 +38,7 @@ app.on('ready', ()=> {
 			{label: 'このアプリについて', click: ()=> require('about-window').default({
 				icon_path	: path.join(__dirname, 'app/icon.png'),
 				package_json_dir	: __dirname,
-				copyright	: 'Copyright '+ pkg.appCopyright +' 2023',
+				copyright	: 'Copyright '+ pkg.appCopyright +' 2024',
 				homepage	: pkg.homepage,
 				license		: '',
 				use_version_info	: false,
@@ -46,6 +46,8 @@ app.on('ready', ()=> {
 			{type: 'separator'},
 			{label: '設定', click: ()=> guiWin.webContents.send('fire', 'c'), accelerator: "CmdOrCtrl+,"},
 			{label: '全画面/ウインドウモード切替', click: ()=> guiWin.webContents.send('fire', 'alt+enter'), accelerator: 'F11'},
+			{label: 'ウインドウサイズを初期に戻す', click: ()=> guiWin.webContents.send('fire', 'Meta+0')},
+			{type: 'separator'},
 			{label: 'メッセージを消す', click: ()=> guiWin.webContents.send('fire', ' ')},
 			{label: 'メッセージ履歴の表示', click: ()=> guiWin.webContents.send('fire', 'r')},
 			{label: '次の選択肢・未読まで進む', click: ()=> guiWin.webContents.send('fire', 'f')},
@@ -59,18 +61,7 @@ app.on('ready', ()=> {
 
 	guiWin = require('@famibee/skynovel/appMain').initRenderer(
 		path.join(__dirname, 'app/index.htm'),
-		pkg.version,
-		{
-			id			: 'SKYNovel-'+ app.name,
-			width		: 1024,
-			height		: 768,
-			min_width	: 300,
-			min_height	: 300,
-			acceptFirstMouse		: true,
-			textAreasAreResizable	: false,
-			resizable		: false,
-			fullscreenable	: true,
-		}
+		pkg.version, {},
 	);
 	guiWin.on('closed', ()=> app.quit());
 });

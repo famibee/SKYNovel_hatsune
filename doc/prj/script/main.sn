@@ -5,9 +5,8 @@
 
 	[toggle_full_screen key=w]
 	[event global=true call=true key=alt+enter label=*toggle_full_screen]
-		&w = const.flash.display.Stage.displayState=='normal'
 		&s = const.sn.config.window.height > const.sn.screenResolutionY || const.sn.config.window.width > const.sn.screenResolutionX
-		[toggle_full_screen cond='w && s']
+		[toggle_full_screen cond='! const.sn.displayState && s']
 		; プレイ環境より画面サイズが大きい場合は全画面モードに
 	[event global=true call=true key=ArrowLeft label=*set_focus arg=prev]
 	[event global=true call=true key=ArrowRight label=*set_focus arg=next]
@@ -15,7 +14,8 @@
 	[event global=true call=true key=F5 label=*reload_script cond=const.sn.isDebugger]
 	[event global=true call=true key=F7 label=*stats cond=const.sn.isDebugger]
 	[event global=true call=true key=F8 label=*dump cond=const.sn.isDebugger]
-;	[update_check url='http://ugainovel.hiho.jp/famibee/sample/hatsune/']
+	[event global=true call=true key=Meta+0 label=*reset_size cond=const.sn.isApp]
+;	[update_check url='http://ugainovel.hiho.jp/famibee/sample/hatsune/' cond=!const.体験版]
 
 [macro name=lr nowarn_unused=true]
 	[ws buf=VOICE canskip=true stop=false cond='sn.auto.enabled && !sn.skip.enabled']
@@ -80,4 +80,8 @@
 	[dump_lay]
 ;	[dump_val]
 ;	[dump_stack]
+[return]
+
+*reset_size
+	[window width=&const.sn.config.window.width height=&const.sn.config.window.height]
 [return]

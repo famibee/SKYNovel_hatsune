@@ -10,5 +10,6 @@ module.exports = {
 	devServer: {
 		static: {directory: './doc'},
 		client: {logging: 'warn',},
+		port: 8081,
 	},
 };
